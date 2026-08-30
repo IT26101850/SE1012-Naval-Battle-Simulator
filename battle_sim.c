@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <time.h>
+#include <string.h>
 
 #define PI 3.14159265358979323846
 #define G 9.81
@@ -19,7 +20,9 @@ typedef struct {
  
 //Battleship structure
 typedef struct {
-	int type;
+	char type;
+	char name[50];
+	char gun_name[50];
 	double x, y;
 	double max_v;
 }Battleship;
@@ -42,8 +45,41 @@ double get_distance(double x1, double y1, double x2, double y2) {
 int is_in_range(double shooter_x, double shooter_y, double min_r, double max_r, double target_x, double target_y) {
   double dist = get_distance(shooter_x, shooter_y, target_x, target_y);
   return (dist >= min_r && dist <= max_r);
-}  
-  
+} 
+
+//Battleship setup logic
+void init_battleship(Battleship *b, char type, double max_v, double x, double y) {
+	b->type = type;
+	b->max_v = max_v;
+	b->x = x;
+	b->y = y;
+
+	switch (type) {
+		case 'U': case 'u':
+			strcpy(b->name, "USS Iowa (BB-61)");
+			strcpy(b->gun_name, "50-caliber Mark 7 gun");
+			break;
+		case 'M': case 'm':
+			strcpy(b->name, "MS king George V");
+			strcpy(b->gun_name, "MARK 7 gun");
+			break;
+		case 'R': case 'r':
+		       strcpy(b->name, "Richelieu");
+	       	       strcpy(b->gun_name, "Mle 1935 gun");
+		        break;
+		case 'S': case 's':
+		       strcpy(b->name, "Sovetsky Soyuz-class");
+		       strcpy(b->gun_name, "B-37 gun");
+                        break;
+		default:
+			strcpy(b->name, "unknown battleship");
+			strcpy(b->gun_name, "Standard gun");
+                        break;
+
+		}      
+}		       
+
+			
 int main() {
     printf("Battle Simulator Initialized...\n");
 
