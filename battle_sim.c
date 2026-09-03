@@ -10,8 +10,10 @@
 //Escort ship structure
 typedef struct {
 	int id;
-	int type; //0 to 4
-        double x,y;
+	char type; // 'A', 'B', 'C', 'D', 'E'
+	char name[50];
+	char gun_name[50];
+        double x, y;
 	double min_angle, max_angle;
 	double min_v, max_v;
 	double impact_power;
@@ -66,19 +68,81 @@ void init_battleship(Battleship *b, char type, double max_v, double x, double y)
 		case 'R': case 'r':
 		       strcpy(b->name, "Richelieu");
 	       	       strcpy(b->gun_name, "Mle 1935 gun");
-		        break;
+		       break;
 		case 'S': case 's':
 		       strcpy(b->name, "Sovetsky Soyuz-class");
 		       strcpy(b->gun_name, "B-37 gun");
-                        break;
+		       break;
 		default:
 			strcpy(b->name, "unknown battleship");
 			strcpy(b->gun_name, "Standard gun");
-                        break;
+		       	break;
 
 		}      
-}		       
+}
 
+//Escortship setup logic
+void init_escort_ship(EscortShip *e, int id, double canvas_D, double v_max_b) {
+	e->id = id;
+	e->x = (double)(rand() % (int)canvas_D);
+	e->y = (double)(rand() % (int)canvas_D);
+
+	int type_idx = rand() % 5;
+
+	switch (type_idx) {
+		case 0:
+			e->type = 'A';
+			strcpy(e->name, "1936A-class Destroyer");
+			strcpy(e->gun_name, "SK C/34 naval gun");
+			e->impact_power = 0.08;
+			e->min_angle = (rand() % 15) + 5.0;
+			e->max_angle = e->min_angle + 20.0;
+			e->min_v = 10.0 + (rand()%10);
+			e->max_v = 1.2 * v_max_b;
+			break;
+		case 1:
+			e->type = 'B';
+			strcpy(e->name, "Gabbiano-class Corvette");
+			strcpy(e->gun_name, "L/47 dual-purpose gun");
+			e->impact_power = 0.06;
+			e->min_angle = (rand() % 15) + 5.0;
+			e->max_angle = e->min_angle + 30.0;
+			e->min_v = 5.0 + (rand() % 10);
+			e->max_v = v_max_b * 0.8;
+			break;
+		case 2:
+			e->type = 'C';
+			strcpy(e->name, "Matsu-class Destroyer");
+			strcpy(e->gun_name, "Type 89 dual-purpose gun");
+			e->impact_power = 0.07;
+			e->min_angle = (rand() % 15) + 5.0;
+			e->max_angle = e->min_angle + 25.0;
+			e->min_v = 5.0 + (rand() % 10);
+			e->max_v = v_max_b * 0.85;
+			break;
+		case 3:
+			e->type = 'D';
+			strcpy(e->name, "F-class Escort Ships");
+			strcpy(e->gun_name, "SK C/32 naval gun");
+			e->impact_power = 0.05;
+			e->min_angle = (rand() % 15) + 5.0;
+			e->max_angle = e->min_angle + 50.0;
+			e->min_v = 5.0 + (rand() % 10);
+			e->max_v = v_max_b * 0.75;
+		case 4:
+			e->type = 'E';
+			strcpy(e->name, "Japanese Kaibokan");
+			strcpy(e->gun_name, "4.7 inch naval gun");
+			e->impact_power = 0.04;
+			e->min_angle = (rand() % 10) + 5.0;
+			e->max_angle = e->min_angle + 70.0;
+			e->min_v = 5.0 + (rand() % 10);
+			e->max_v = v_max_b * 0.7;
+			break;
+	}
+}
+
+	      
 			
 int main() {
     printf("Battle Simulator Initialized...\n");
