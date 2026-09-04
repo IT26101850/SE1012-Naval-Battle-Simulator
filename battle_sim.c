@@ -66,17 +66,17 @@ void init_battleship(Battleship *b, char type, double max_v, double x, double y)
 			strcpy(b->gun_name, "MARK 7 gun");
 			break;
 		case 'R': case 'r':
-		       strcpy(b->name, "Richelieu");
-	       	       strcpy(b->gun_name, "Mle 1935 gun");
-		       break;
+			strcpy(b->name, "Richelieu");
+			strcpy(b->gun_name, "Mle 1935 gun");
+			break;
 		case 'S': case 's':
 		       strcpy(b->name, "Sovetsky Soyuz-class");
 		       strcpy(b->gun_name, "B-37 gun");
 		       break;
 		default:
-			strcpy(b->name, "unknown battleship");
-			strcpy(b->gun_name, "Standard gun");
-		       	break;
+		       strcpy(b->name, "unknown battleship");
+		       strcpy(b->gun_name, "Standard Gun");
+		       break;
 
 		}      
 }
@@ -121,7 +121,7 @@ void init_escort_ship(EscortShip *e, int id, double canvas_D, double v_max_b) {
 			e->max_v = v_max_b * 0.85;
 			break;
 		case 3:
-			e->type = 'D';
+	        	e->type = 'D';
 			strcpy(e->name, "F-class Escort Ships");
 			strcpy(e->gun_name, "SK C/32 naval gun");
 			e->impact_power = 0.05;
@@ -129,6 +129,7 @@ void init_escort_ship(EscortShip *e, int id, double canvas_D, double v_max_b) {
 			e->max_angle = e->min_angle + 50.0;
 			e->min_v = 5.0 + (rand() % 10);
 			e->max_v = v_max_b * 0.75;
+			break;
 		case 4:
 			e->type = 'E';
 			strcpy(e->name, "Japanese Kaibokan");
@@ -141,11 +142,103 @@ void init_escort_ship(EscortShip *e, int id, double canvas_D, double v_max_b) {
 			break;
 	}
 }
+//save initial conditions to text file
+void  save_initial_conditions(Battleship b, EscortShip escorts[], int n, double canvas_D) {
+	FILE *file;
+	int i;
+
+	file = fopen("initial_conditions.txt", "w");
+
+	if (file == NULL) {
+		printf("Error creating initial_condition.txt!\n");
+		return; 
+	}
+	fprintf(file, "INITIAL BATTLEFEILD CONDITIONS\n\n");
+	fprintf(file, "Canvas size: %.2f x %.2f\n\n" , canvas_D, canvas_D);
+
+	fprintf(file, "BATTLESHIP\n");
+	fprintf(file, "Type: %c\n", b.type);
+	fprintf(file, "Name: %s\n", b.name);
+	fprintf(file, "Gun: %s\n", b.gun_name);
+	fprintf(file, "position: (%.2f, %.2f)\n", b.x, b.y);
+	fprintf(file, "max_v: %.2f\n\n", b.max_v);
+
+	fprintf(file, "ESCORT SHIPS\n");
+
+	for (i = 0; i < n; i++) {
+		fprintf(file, "\nEscort Ship ID: %d\n", escorts[i].id);
+		fprintf(file, "type: %c\n", escorts[i].type);
+		fprintf(file, "Name: %s\n", escorts[i].name);
+		fprintf(file, "Gun: %s\n", escorts[i].gun_name);
+		fprintf(file, "Position: (%.2f, %.2f)\n", escorts[i].x, escorts[i].y);
+		fprintf(file, "minimum angle: %.2f\n", escorts[i].min_angle);
+		fprintf(file, "maximum angle: %.2f\n", escorts[i].max_angle);
+		fprintf(file, "maximum velocity: %.2f\n", escorts[i].max_v);
+		fprintf(file, "minimum velocity: %.2f\n", escorts[i].min_v);
+		fprintf(file, "impact power: %.2f\n", escorts[i].impact_power);
+
+	}
+
+
+		
+					
+	fclose(file);
+	printf("initial conditions saved successfully.\n");
+}
+
+
+
+
+	
+
 
 	      
 			
 int main() {
-    printf("Battle Simulator Initialized...\n");
+    Battleship battleship;
+    EscortShip escorts[100];
+
+    int n;
+    double canvas_D;
+    double v_max_b;
+    char type;
+
+    srand((unsigned int)time(NULL));
+
+    printf("enter canvas size: ");
+    scanf("%lf", &canvas_D);
+
+    printf("enter number of escort ships: ");
+    scanf("%d", &n);
+
+    printf("enter battleship type (U/M/R/S): ");
+    scanf(" %c", &type);
+
+    printf("enter battleship max_v: ");
+    scanf("%lf", &v_max_b);
+
+    //create battleship
+    init_battleship(&battleship, type, v_max_b, 50, 50);
+
+    //create escort ships
+    for (int i = 0; i < n; i++)
+    {
+	    init_escort_ship(
+			    &escorts[i],
+			    i + 1,
+			    canvas_D,
+			    v_max_b
+			    );
+    }
+    //call file handling function
+    save_initial_conditions(
+		    battleship,
+		    escorts,
+		    n,
+		    canvas_D
+		    );
+
+
 
     return 0;
 }
