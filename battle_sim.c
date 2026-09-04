@@ -186,7 +186,47 @@ void  save_initial_conditions(Battleship b, EscortShip escorts[], int n, double 
 	printf("initial conditions saved successfully.\n");
 }
 
+//save final conditions
+void save_final_conditions(Battleship b, EscortShip e[], int n)
+{
+	FILE *file;
+	int i;
 
+	file = fopen("final_conditions.txt", "w");
+
+	if (file == NULL)
+	{
+		printf("error opening final_condition.txt\n");
+		return;
+	}
+	fprintf(file, "FINAL BATTLEFIELD CONDITIONS\n\n");
+
+	fprintf(file, "BATTLESHIP\n");
+	fprintf(file, "Type: %c\n", b.type);
+	fprintf(file, "name: %s\n", b.name);
+	fprintf(file, "position: (%.2f, %.2f)\n", b.x, b.y);
+	fprintf(file, "maximum velocity: %.2f\n\n", b.max_v);
+
+	fprintf(file, "ESCORT SHIPS\n");
+
+	for(i = 0; i < n; i++)
+	{
+		fprintf(file, "\nEscort Ship ID: %d\n", e[i].id);
+		fprintf(file, "type: %c\n", e[i].type);
+		fprintf(file, "position: (%.2f, %.2f)\n", e[i].x, e[i].y);
+
+		if(e[i].is_destroyed == 1)
+		{
+			fprintf(file, "status: DESTROYED\n");
+		}
+		else
+		{
+			fprintf(file, "status: ALIVE\n");
+		}
+	}
+	fclose(file);
+	printf("final conditions saved successfully.\n");
+}
 
 
 	
@@ -237,6 +277,8 @@ int main() {
 		    n,
 		    canvas_D
 		    );
+
+    save_final_conditions(battleship, escorts, n);
 
 
 
