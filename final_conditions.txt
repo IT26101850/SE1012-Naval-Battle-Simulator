@@ -1,159 +1,189 @@
 FINAL BATTLEFIELD CONDITIONS
 
 BATTLESHIP
-Type: U
-name: USS Iowa (BB-61)
+Type: R
+name: Richelieu
 position: (50.00, 50.00)
 maximum velocity: 20.00
 
 ESCORT SHIPS
 
 Escort Ship ID: 1
-type: E
-position: (250.00, 382.00)
+type: A
+position: (30.00, 281.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 2
-type: B
-position: (273.00, 239.00)
+type: D
+position: (192.00, 187.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 3
-type: D
-position: (339.00, 382.00)
+type: A
+position: (265.00, 53.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 4
-type: B
-position: (215.00, 273.00)
+type: C
+position: (176.00, 284.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 5
-type: C
-position: (12.00, 200.00)
+type: A
+position: (162.00, 319.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 6
 type: C
-position: (248.00, 180.00)
+position: (329.00, 357.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 7
-type: D
-position: (74.00, 211.00)
+type: E
+position: (385.00, 213.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 8
-type: B
-position: (199.00, 296.00)
+type: E
+position: (275.00, 394.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 9
-type: E
-position: (152.00, 358.00)
+type: A
+position: (165.00, 323.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 10
-type: A
-position: (394.00, 216.00)
+type: E
+position: (172.00, 39.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 11
-type: A
-position: (63.00, 39.00)
+type: E
+position: (165.00, 359.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 12
-type: C
-position: (148.00, 134.00)
+type: E
+position: (308.00, 186.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 13
-type: C
-position: (81.00, 284.00)
+type: B
+position: (387.00, 392.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 14
-type: C
-position: (134.00, 333.00)
+type: E
+position: (93.00, 109.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 15
-type: A
-position: (314.00, 305.00)
+type: D
+position: (136.00, 308.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 16
-type: D
-position: (57.00, 256.00)
+type: C
+position: (25.00, 261.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 17
-type: A
-position: (229.00, 141.00)
+type: E
+position: (217.00, 57.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 18
-type: E
-position: (56.00, 285.00)
+type: B
+position: (82.00, 100.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 19
-type: E
-position: (162.00, 51.00)
+type: B
+position: (119.00, 348.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 20
-type: B
-position: (335.00, 156.00)
+type: E
+position: (245.00, 396.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 21
-type: A
-position: (24.00, 5.00)
+type: D
+position: (58.00, 171.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 22
-type: A
-position: (375.00, 392.00)
+type: D
+position: (121.00, 79.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 23
-type: D
-position: (310.00, 229.00)
+type: A
+position: (130.00, 101.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 24
-type: B
-position: (143.00, 194.00)
+type: C
+position: (294.00, 181.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 25
-type: B
-position: (346.00, 371.00)
+type: E
+position: (356.00, 18.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 26
-type: A
-position: (354.00, 212.00)
+type: C
+position: (271.00, 205.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 27
-type: D
-position: (361.00, 1.00)
+type: C
+position: (55.00, 221.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 28
-type: A
-position: (175.00, 53.00)
+type: C
+position: (126.00, 127.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 29
-type: A
-position: (302.00, 113.00)
+type: C
+position: (228.00, 282.00)
+time to hit: 0.00 seconds
 status: ALIVE
 
 Escort Ship ID: 30
-type: B
-position: (201.00, 160.00)
+type: C
+position: (214.00, 55.00)
+time to hit: 0.00 seconds
 status: ALIVE

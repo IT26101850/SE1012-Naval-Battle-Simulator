@@ -3,340 +3,340 @@ INITIAL BATTLEFEILD CONDITIONS
 Canvas size: 400.00 x 400.00
 
 BATTLESHIP
-Type: U
-Name: USS Iowa (BB-61)
-Gun: 50-caliber Mark 7 gun
+Type: R
+Name: Richelieu
+Gun: Mle 1935 gun
 position: (50.00, 50.00)
 max_v: 20.00
 
 ESCORT SHIPS
 
 Escort Ship ID: 1
-type: E
-Name: Japanese Kaibokan
-Gun: 4.7 inch naval gun
-Position: (131.00, 151.00)
-minimum angle: 14.00
-maximum angle: 84.00
-maximum velocity: 14.00
-minimum velocity: 8.00
-impact power: 0.04
+type: A
+Name: 1936A-class Destroyer
+Gun: SK C/34 naval gun
+Position: (30.00, 281.00)
+minimum angle: 16.00
+maximum angle: 36.00
+maximum velocity: 24.00
+minimum velocity: 10.00
+impact power: 0.08
 
 Escort Ship ID: 2
 type: D
 Name: F-class Escort Ships
 Gun: SK C/32 naval gun
-Position: (352.00, 305.00)
-minimum angle: 13.00
-maximum angle: 63.00
+Position: (192.00, 187.00)
+minimum angle: 8.00
+maximum angle: 58.00
 maximum velocity: 15.00
-minimum velocity: 14.00
+minimum velocity: 9.00
 impact power: 0.05
 
 Escort Ship ID: 3
-type: D
-Name: F-class Escort Ships
-Gun: SK C/32 naval gun
-Position: (102.00, 128.00)
-minimum angle: 15.00
-maximum angle: 65.00
-maximum velocity: 15.00
-minimum velocity: 6.00
-impact power: 0.05
+type: A
+Name: 1936A-class Destroyer
+Gun: SK C/34 naval gun
+Position: (265.00, 53.00)
+minimum angle: 10.00
+maximum angle: 30.00
+maximum velocity: 24.00
+minimum velocity: 19.00
+impact power: 0.08
 
 Escort Ship ID: 4
-type: B
-Name: Gabbiano-class Corvette
-Gun: L/47 dual-purpose gun
-Position: (65.00, 18.00)
-minimum angle: 15.00
-maximum angle: 45.00
-maximum velocity: 16.00
-minimum velocity: 10.00
-impact power: 0.06
+type: C
+Name: Matsu-class Destroyer
+Gun: Type 89 dual-purpose gun
+Position: (176.00, 284.00)
+minimum angle: 13.00
+maximum angle: 38.00
+maximum velocity: 17.00
+minimum velocity: 5.00
+impact power: 0.07
 
 Escort Ship ID: 5
-type: B
-Name: Gabbiano-class Corvette
-Gun: L/47 dual-purpose gun
-Position: (253.00, 254.00)
-minimum angle: 6.00
+type: A
+Name: 1936A-class Destroyer
+Gun: SK C/34 naval gun
+Position: (162.00, 319.00)
+minimum angle: 16.00
 maximum angle: 36.00
-maximum velocity: 16.00
-minimum velocity: 12.00
-impact power: 0.06
+maximum velocity: 24.00
+minimum velocity: 13.00
+impact power: 0.08
 
 Escort Ship ID: 6
-type: D
-Name: F-class Escort Ships
-Gun: SK C/32 naval gun
-Position: (291.00, 312.00)
-minimum angle: 14.00
-maximum angle: 64.00
-maximum velocity: 15.00
-minimum velocity: 8.00
-impact power: 0.05
+type: C
+Name: Matsu-class Destroyer
+Gun: Type 89 dual-purpose gun
+Position: (329.00, 357.00)
+minimum angle: 16.00
+maximum angle: 41.00
+maximum velocity: 17.00
+minimum velocity: 6.00
+impact power: 0.07
 
 Escort Ship ID: 7
 type: E
 Name: Japanese Kaibokan
 Gun: 4.7 inch naval gun
-Position: (355.00, 125.00)
-minimum angle: 9.00
-maximum angle: 79.00
+Position: (385.00, 213.00)
+minimum angle: 5.00
+maximum angle: 75.00
 maximum velocity: 14.00
-minimum velocity: 9.00
+minimum velocity: 5.00
 impact power: 0.04
 
 Escort Ship ID: 8
 type: E
 Name: Japanese Kaibokan
 Gun: 4.7 inch naval gun
-Position: (359.00, 36.00)
-minimum angle: 5.00
-maximum angle: 75.00
+Position: (275.00, 394.00)
+minimum angle: 13.00
+maximum angle: 83.00
 maximum velocity: 14.00
-minimum velocity: 11.00
+minimum velocity: 12.00
 impact power: 0.04
 
 Escort Ship ID: 9
+type: A
+Name: 1936A-class Destroyer
+Gun: SK C/34 naval gun
+Position: (165.00, 323.00)
+minimum angle: 18.00
+maximum angle: 38.00
+maximum velocity: 24.00
+minimum velocity: 10.00
+impact power: 0.08
+
+Escort Ship ID: 10
 type: E
 Name: Japanese Kaibokan
 Gun: 4.7 inch naval gun
-Position: (170.00, 322.00)
-minimum angle: 8.00
-maximum angle: 78.00
+Position: (172.00, 39.00)
+minimum angle: 9.00
+maximum angle: 79.00
 maximum velocity: 14.00
-minimum velocity: 7.00
+minimum velocity: 8.00
 impact power: 0.04
-
-Escort Ship ID: 10
-type: C
-Name: Matsu-class Destroyer
-Gun: Type 89 dual-purpose gun
-Position: (317.00, 350.00)
-minimum angle: 8.00
-maximum angle: 33.00
-maximum velocity: 17.00
-minimum velocity: 10.00
-impact power: 0.07
 
 Escort Ship ID: 11
 type: E
 Name: Japanese Kaibokan
 Gun: 4.7 inch naval gun
-Position: (339.00, 144.00)
+Position: (165.00, 359.00)
+minimum angle: 10.00
+maximum angle: 80.00
+maximum velocity: 14.00
+minimum velocity: 10.00
+impact power: 0.04
+
+Escort Ship ID: 12
+type: E
+Name: Japanese Kaibokan
+Gun: 4.7 inch naval gun
+Position: (308.00, 186.00)
+minimum angle: 12.00
+maximum angle: 82.00
+maximum velocity: 14.00
+minimum velocity: 13.00
+impact power: 0.04
+
+Escort Ship ID: 13
+type: B
+Name: Gabbiano-class Corvette
+Gun: L/47 dual-purpose gun
+Position: (387.00, 392.00)
+minimum angle: 12.00
+maximum angle: 42.00
+maximum velocity: 16.00
+minimum velocity: 7.00
+impact power: 0.06
+
+Escort Ship ID: 14
+type: E
+Name: Japanese Kaibokan
+Gun: 4.7 inch naval gun
+Position: (93.00, 109.00)
 minimum angle: 7.00
 maximum angle: 77.00
 maximum velocity: 14.00
 minimum velocity: 12.00
 impact power: 0.04
 
-Escort Ship ID: 12
-type: A
-Name: 1936A-class Destroyer
-Gun: SK C/34 naval gun
-Position: (368.00, 286.00)
-minimum angle: 19.00
-maximum angle: 39.00
-maximum velocity: 24.00
-minimum velocity: 10.00
-impact power: 0.08
-
-Escort Ship ID: 13
-type: A
-Name: 1936A-class Destroyer
-Gun: SK C/34 naval gun
-Position: (163.00, 274.00)
-minimum angle: 9.00
-maximum angle: 29.00
-maximum velocity: 24.00
-minimum velocity: 18.00
-impact power: 0.08
-
-Escort Ship ID: 14
-type: A
-Name: 1936A-class Destroyer
-Gun: SK C/34 naval gun
-Position: (281.00, 239.00)
-minimum angle: 15.00
-maximum angle: 35.00
-maximum velocity: 24.00
-minimum velocity: 19.00
-impact power: 0.08
-
 Escort Ship ID: 15
-type: B
-Name: Gabbiano-class Corvette
-Gun: L/47 dual-purpose gun
-Position: (103.00, 232.00)
-minimum angle: 18.00
-maximum angle: 48.00
-maximum velocity: 16.00
-minimum velocity: 10.00
-impact power: 0.06
-
-Escort Ship ID: 16
 type: D
 Name: F-class Escort Ships
 Gun: SK C/32 naval gun
-Position: (225.00, 305.00)
-minimum angle: 13.00
-maximum angle: 63.00
+Position: (136.00, 308.00)
+minimum angle: 9.00
+maximum angle: 59.00
 maximum velocity: 15.00
-minimum velocity: 11.00
+minimum velocity: 6.00
 impact power: 0.05
 
-Escort Ship ID: 17
+Escort Ship ID: 16
 type: C
 Name: Matsu-class Destroyer
 Gun: Type 89 dual-purpose gun
-Position: (343.00, 27.00)
+Position: (25.00, 261.00)
 minimum angle: 5.00
 maximum angle: 30.00
 maximum velocity: 17.00
-minimum velocity: 7.00
+minimum velocity: 10.00
 impact power: 0.07
 
+Escort Ship ID: 17
+type: E
+Name: Japanese Kaibokan
+Gun: 4.7 inch naval gun
+Position: (217.00, 57.00)
+minimum angle: 7.00
+maximum angle: 77.00
+maximum velocity: 14.00
+minimum velocity: 9.00
+impact power: 0.04
+
 Escort Ship ID: 18
-type: D
-Name: F-class Escort Ships
-Gun: SK C/32 naval gun
-Position: (129.00, 393.00)
-minimum angle: 19.00
-maximum angle: 69.00
-maximum velocity: 15.00
-minimum velocity: 7.00
-impact power: 0.05
+type: B
+Name: Gabbiano-class Corvette
+Gun: L/47 dual-purpose gun
+Position: (82.00, 100.00)
+minimum angle: 8.00
+maximum angle: 38.00
+maximum velocity: 16.00
+minimum velocity: 14.00
+impact power: 0.06
 
 Escort Ship ID: 19
 type: B
 Name: Gabbiano-class Corvette
 Gun: L/47 dual-purpose gun
-Position: (188.00, 394.00)
-minimum angle: 10.00
-maximum angle: 40.00
+Position: (119.00, 348.00)
+minimum angle: 17.00
+maximum angle: 47.00
 maximum velocity: 16.00
-minimum velocity: 9.00
+minimum velocity: 5.00
 impact power: 0.06
 
 Escort Ship ID: 20
-type: A
-Name: 1936A-class Destroyer
-Gun: SK C/34 naval gun
-Position: (97.00, 26.00)
+type: E
+Name: Japanese Kaibokan
+Gun: 4.7 inch naval gun
+Position: (245.00, 396.00)
 minimum angle: 9.00
-maximum angle: 29.00
-maximum velocity: 24.00
-minimum velocity: 18.00
-impact power: 0.08
+maximum angle: 79.00
+maximum velocity: 14.00
+minimum velocity: 13.00
+impact power: 0.04
 
 Escort Ship ID: 21
-type: A
-Name: 1936A-class Destroyer
-Gun: SK C/34 naval gun
-Position: (124.00, 147.00)
-minimum angle: 7.00
-maximum angle: 27.00
-maximum velocity: 24.00
-minimum velocity: 15.00
-impact power: 0.08
+type: D
+Name: F-class Escort Ships
+Gun: SK C/32 naval gun
+Position: (58.00, 171.00)
+minimum angle: 18.00
+maximum angle: 68.00
+maximum velocity: 15.00
+minimum velocity: 7.00
+impact power: 0.05
 
 Escort Ship ID: 22
 type: D
 Name: F-class Escort Ships
 Gun: SK C/32 naval gun
-Position: (85.00, 282.00)
-minimum angle: 10.00
-maximum angle: 60.00
-maximum velocity: 15.00
-minimum velocity: 7.00
-impact power: 0.05
-
-Escort Ship ID: 23
-type: C
-Name: Matsu-class Destroyer
-Gun: Type 89 dual-purpose gun
-Position: (189.00, 49.00)
-minimum angle: 16.00
-maximum angle: 41.00
-maximum velocity: 17.00
-minimum velocity: 9.00
-impact power: 0.07
-
-Escort Ship ID: 24
-type: E
-Name: Japanese Kaibokan
-Gun: 4.7 inch naval gun
-Position: (324.00, 210.00)
-minimum angle: 7.00
-maximum angle: 77.00
-maximum velocity: 14.00
-minimum velocity: 7.00
-impact power: 0.04
-
-Escort Ship ID: 25
-type: D
-Name: F-class Escort Ships
-Gun: SK C/32 naval gun
-Position: (332.00, 372.00)
-minimum angle: 15.00
-maximum angle: 65.00
-maximum velocity: 15.00
-minimum velocity: 12.00
-impact power: 0.05
-
-Escort Ship ID: 26
-type: D
-Name: F-class Escort Ships
-Gun: SK C/32 naval gun
-Position: (262.00, 167.00)
+Position: (121.00, 79.00)
 minimum angle: 14.00
 maximum angle: 64.00
 maximum velocity: 15.00
 minimum velocity: 6.00
 impact power: 0.05
 
-Escort Ship ID: 27
+Escort Ship ID: 23
+type: A
+Name: 1936A-class Destroyer
+Gun: SK C/34 naval gun
+Position: (130.00, 101.00)
+minimum angle: 7.00
+maximum angle: 27.00
+maximum velocity: 24.00
+minimum velocity: 15.00
+impact power: 0.08
+
+Escort Ship ID: 24
+type: C
+Name: Matsu-class Destroyer
+Gun: Type 89 dual-purpose gun
+Position: (294.00, 181.00)
+minimum angle: 12.00
+maximum angle: 37.00
+maximum velocity: 17.00
+minimum velocity: 6.00
+impact power: 0.07
+
+Escort Ship ID: 25
 type: E
 Name: Japanese Kaibokan
 Gun: 4.7 inch naval gun
-Position: (231.00, 3.00)
-minimum angle: 8.00
-maximum angle: 78.00
+Position: (356.00, 18.00)
+minimum angle: 12.00
+maximum angle: 82.00
 maximum velocity: 14.00
-minimum velocity: 5.00
+minimum velocity: 6.00
 impact power: 0.04
 
+Escort Ship ID: 26
+type: C
+Name: Matsu-class Destroyer
+Gun: Type 89 dual-purpose gun
+Position: (271.00, 205.00)
+minimum angle: 17.00
+maximum angle: 42.00
+maximum velocity: 17.00
+minimum velocity: 14.00
+impact power: 0.07
+
+Escort Ship ID: 27
+type: C
+Name: Matsu-class Destroyer
+Gun: Type 89 dual-purpose gun
+Position: (55.00, 221.00)
+minimum angle: 6.00
+maximum angle: 31.00
+maximum velocity: 17.00
+minimum velocity: 11.00
+impact power: 0.07
+
 Escort Ship ID: 28
-type: A
-Name: 1936A-class Destroyer
-Gun: SK C/34 naval gun
-Position: (46.00, 140.00)
-minimum angle: 19.00
-maximum angle: 39.00
-maximum velocity: 24.00
-minimum velocity: 16.00
-impact power: 0.08
+type: C
+Name: Matsu-class Destroyer
+Gun: Type 89 dual-purpose gun
+Position: (126.00, 127.00)
+minimum angle: 6.00
+maximum angle: 31.00
+maximum velocity: 17.00
+minimum velocity: 8.00
+impact power: 0.07
 
 Escort Ship ID: 29
-type: A
-Name: 1936A-class Destroyer
-Gun: SK C/34 naval gun
-Position: (217.00, 228.00)
-minimum angle: 9.00
-maximum angle: 29.00
-maximum velocity: 24.00
-minimum velocity: 19.00
-impact power: 0.08
+type: C
+Name: Matsu-class Destroyer
+Gun: Type 89 dual-purpose gun
+Position: (228.00, 282.00)
+minimum angle: 13.00
+maximum angle: 38.00
+maximum velocity: 17.00
+minimum velocity: 6.00
+impact power: 0.07
 
 Escort Ship ID: 30
 type: C
 Name: Matsu-class Destroyer
 Gun: Type 89 dual-purpose gun
-Position: (321.00, 395.00)
-minimum angle: 5.00
-maximum angle: 30.00
+Position: (214.00, 55.00)
+minimum angle: 7.00
+maximum angle: 32.00
 maximum velocity: 17.00
-minimum velocity: 12.00
+minimum velocity: 7.00
 impact power: 0.07

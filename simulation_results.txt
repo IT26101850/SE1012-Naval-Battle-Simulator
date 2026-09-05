@@ -1,14 +1,11 @@
 SIMULATION RESULTS
 
-Battleship: USS Iowa (BB-61)
-Battleship type: U
+Battleship: Richelieu
+Battleship type: R
 
 result: BATTLESHIP SURVIVED
 
-number of Escort Ships hit: 1
-battle end time: 1.00 seconds
+number of Escort Ships hit: 0
+battle end time: 0.00 seconds
 
 ESCORT SHIPS HIT BY BATTLESHIP
-
-Escort Ship ID: 69
-position: (49.00, 61.00)

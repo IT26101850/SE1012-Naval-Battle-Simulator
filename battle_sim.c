@@ -18,6 +18,7 @@ typedef struct {
 	double min_v, max_v;
 	double impact_power;
 	int is_destroyed;
+	double time_to_hit;
 }EscortShip;
  
 //Battleship structure
@@ -37,7 +38,15 @@ double get_max_range(double max_v) {
 //calculate minimum range for Eship
 double get_min_range_escort(double min_v, double min_angle) {
 	return (min_v * min_v * sin(2 * min_angle * PI / 180.0)) / G;
-}	
+}
+
+//calculate time_to_hit
+double get_time_to_hit(double distance, double velocity)
+{
+	double angle = 45.0 * PI / 180.0;
+
+	return distance / (velocity * cos(angle));
+}
 
 //calculate distance between ships
 double get_distance(double x1, double y1, double x2, double y2) {
@@ -86,6 +95,8 @@ void init_escort_ship(EscortShip *e, int id, double canvas_D, double v_max_b) {
 	e->id = id;
 	e->x = (double)(rand() % (int)canvas_D);
 	e->y = (double)(rand() % (int)canvas_D);
+	e->is_destroyed = 0;
+	e->time_to_hit = 0.0;
 
 	int type_idx = rand() % 5;
 
@@ -130,6 +141,7 @@ void init_escort_ship(EscortShip *e, int id, double canvas_D, double v_max_b) {
 			e->min_v = 5.0 + (rand() % 10);
 			e->max_v = v_max_b * 0.75;
 			break;
+		
 		case 4:
 			e->type = 'E';
 			strcpy(e->name, "Japanese Kaibokan");
@@ -196,7 +208,7 @@ void save_final_conditions(Battleship b, EscortShip e[], int n)
 
 	if (file == NULL)
 	{
-		printf("error opening final_condition.txt\n");
+		printf("error opening final_conditions.txt\n");
 		return;
 	}
 	fprintf(file, "FINAL BATTLEFIELD CONDITIONS\n\n");
@@ -214,6 +226,8 @@ void save_final_conditions(Battleship b, EscortShip e[], int n)
 		fprintf(file, "\nEscort Ship ID: %d\n", e[i].id);
 		fprintf(file, "type: %c\n", e[i].type);
 		fprintf(file, "position: (%.2f, %.2f)\n", e[i].x, e[i].y);
+		fprintf(file, "time to hit: %.2f seconds\n", e[i].time_to_hit);
+	
 
 		if(e[i].is_destroyed == 1)
 		{
@@ -224,19 +238,20 @@ void save_final_conditions(Battleship b, EscortShip e[], int n)
 			fprintf(file, "status: ALIVE\n");
 		}
 	}
+	
 	fclose(file);
 	printf("final conditions saved successfully.\n");
 }
 
 //final results
-void save_simulation_results(Battleship b, EscortShip e[], int n,
-		int hit_count, int b_destroyed,
-		double battle_time)
+void save_simulation_results(Battleship b, EscortShip e[], int n, int hit_count, int b_destroyed, double battle_time, int destroyer_id)
+
 {
 	FILE *file;
 	int i;
 
 	file = fopen("simulation_results.txt", "w");
+
 
 	if(file == NULL)
 	{
@@ -246,7 +261,6 @@ void save_simulation_results(Battleship b, EscortShip e[], int n,
 	}
 
 	fprintf(file, "SIMULATION RESULTS\n\n");
-
 	fprintf(file, "Battleship: %s\n", b.name);
 	fprintf(file, "Battleship type: %c\n\n", b.type);
 
@@ -256,18 +270,12 @@ void save_simulation_results(Battleship b, EscortShip e[], int n,
 
 		fprintf(file, "Escort Ship that destroyed Battleship:\n");
 
-		for (i = 0; i < n; i++)
-		{
-			if (e[i].is_destroyed == 0)
-			{
-				fprintf(file, "Escort Ship ID: %d\n", e[i].id);
-				fprintf(file, "Escort Ship type: %c\n", e[i].type);
-				break;
-			}
-		}
+		fprintf(file, "Escort Ship ID: %d\n", destroyer_id);
 	}
 	else
 	{
+
+		
 		fprintf(file, "result: BATTLESHIP SURVIVED\n\n");
 		fprintf(file, "number of Escort Ships hit: %d\n", hit_count);
 		fprintf(file, "battle end time: %.2f seconds\n\n", battle_time);
@@ -277,24 +285,27 @@ void save_simulation_results(Battleship b, EscortShip e[], int n,
 		{
 			if (e[i].is_destroyed == 1)
 			{
-				fprintf(file, "\nEscort Ship ID: %d\n", e[i].type);
+				fprintf(file, "\nEscort Ship ID: %d\n", e[i].id);
 				fprintf(file, "position: (%.2f, %.2f)\n", e[i].x, e[i].y);
+				fprintf(file, "type: %c\n", e[i].type);
+				fprintf(file, "time to hit: %.2f seconds\n", e[i].time_to_hit);
 			}
 		}
 	}
 	fclose(file);
-
-	printf("simulation results saved successfully.\n");
-}
-
-		
-
+	
 	
 
+	printf("simulation results saved successfully.\n");
 
-	      
-			
-int main() {
+}
+
+
+
+//main function
+int main()
+{	
+		        
     Battleship battleship;
     EscortShip escorts[100];
 
@@ -305,6 +316,8 @@ int main() {
 
     int hit_count = 0;
     int b_destroyed = 0;
+    int destroyer_id = -1;
+
     double battle_time = 0.0;
 
     srand((unsigned int)time(NULL));
@@ -350,6 +363,7 @@ int main() {
     {
         double distance;
         double max_range;
+	double time_to_hit;
 
         distance = get_distance(
             battleship.x,
@@ -363,12 +377,32 @@ int main() {
         if (distance <= max_range)
         {
             escorts[i].is_destroyed = 1;
+
+	    time_to_hit = get_time_to_hit(
+			    distance,
+			    battleship.max_v
+			    );
+
+	    escorts[i].time_to_hit = time_to_hit;
+
+	    
+
             hit_count++;
+
+	    if (time_to_hit > battle_time)
+	    {
+		    battle_time = time_to_hit;
+	    }
 
             printf("Battleship destroyed Escort Ship %d\n",
                    escorts[i].id);
-        }
+	    printf("time to hit: %.2f seconds\n", time_to_hit);
+	}
     }
+        
+    
+    
+    
 
 
     // Remaining Escort Ships attack Battleship
@@ -398,15 +432,31 @@ int main() {
             {
                 b_destroyed = 1;
 
+		destroyer_id = escorts[i].id;
+
                 printf("Escort Ship %d destroyed the Battleship!\n",
                        escorts[i].id);
-
                 break;
             }
         }
     }
 
-    battle_time = 1.0;
+    //display final results
+    printf("\nBATTLE RESULT\n");
+
+    if (b_destroyed == 1)
+    {
+	    printf("battleship is destroyed %d\n", destroyer_id);
+    }
+    else
+    {
+	    printf("battleship is survied.\n");
+
+	    printf("number of Escort Ships hit: %d\n", hit_count);
+
+	    printf("battle end time: %.2f seconds\n", battle_time);
+    }
+    
 
     save_final_conditions(battleship, escorts, n);
 
@@ -416,7 +466,8 @@ int main() {
 		    n,
 		    hit_count,
 		    b_destroyed,
-		    battle_time
+		    battle_time,
+		    destroyer_id
 		    );
 
   
@@ -426,5 +477,9 @@ int main() {
 
     return 0;
 }
+
+
+
+
 
 
