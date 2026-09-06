@@ -393,6 +393,18 @@ int main()
 
     printf("\n BATTLE STARTED \n");
 
+    //simulation
+    for (int p = 0; p < k; p++)
+    {
+	    printf("\n ITERANTION %d\n", p + 1);
+
+	    //move battleship
+	    battleship.x = path_x[p];
+	    battleship.y = path_y[p];
+
+	    printf("battleship position: (%.2f, %.2f)\n", battleship.x, battleship.y);
+    }
+
     // Battleship attacks Escort Ships
     for (int i = 0; i < n; i++)
     {
