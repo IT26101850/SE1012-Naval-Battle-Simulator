@@ -358,6 +358,18 @@ int main()
 			    path_y[i]);
     }
 
+    //move battleship through the generated path
+    for (int i = 0; i < k; i++)
+    {
+	    battleship.x = path_x[i];
+	    battleship.y = path_y[i];
+
+	    printf("Battleship moved to point %d: (%.2f, %.2f)\n",
+			    i + 1,
+			    battleship.x,
+			    battleship.y);
+    }
+
 
 
     //create escort ships
