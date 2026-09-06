@@ -285,10 +285,12 @@ void save_simulation_results(Battleship b, EscortShip e[], int n, int hit_count,
 		{
 			if (e[i].is_destroyed == 1)
 			{
-				fprintf(file, "\nEscort Ship ID: %d\n", e[i].id);
-				fprintf(file, "position: (%.2f, %.2f)\n", e[i].x, e[i].y);
-				fprintf(file, "type: %c\n", e[i].type);
+				fprintf(file, "status: DESTROYED\n");
 				fprintf(file, "time to hit: %.2f seconds\n", e[i].time_to_hit);
+			}
+			else
+			{
+				fprintf(file, "status: ALIVE\n");
 			}
 		}
 	}
@@ -314,6 +316,10 @@ int main()
     double v_max_b;
     char type;
 
+    int k;
+    double path_x[100];
+    double path_y[100];
+
     int hit_count = 0;
     int b_destroyed = 0;
     int destroyer_id = -1;
@@ -328,6 +334,9 @@ int main()
     printf("enter number of escort ships: ");
     scanf("%d", &n);
 
+    printf("enter number of path points (k): ");
+    scanf("%d", &k);
+
     printf("enter battleship type (U/M/R/S): ");
     scanf(" %c", &type);
 
@@ -336,6 +345,20 @@ int main()
 
     //create battleship
     init_battleship(&battleship, type, v_max_b, 50, 50);
+
+    //generate random path points
+    for (int i = 0; i < k; i++)
+    {
+	    path_x[i] = (double)(rand() % (int)canvas_D);
+	    path_y[i] = (double)(rand() % (int)canvas_D);
+
+	    printf("path point %d: (%.2f, %.2f)\n",
+			    i + 1,
+			    path_x[i],
+			    path_y[i]);
+    }
+
+
 
     //create escort ships
     for (int i = 0; i < n; i++)
