@@ -1,0 +1,71 @@
+PART 1B - SIMULATION 1
+
+Iteration: 1
+Battleship position: (34.00, 4.00)
+Escort ships destroyed this iteration: 10
+Total escort ships destroyed: 10
+Iteration battle time: 1.55 seconds
+
+Battleship status: ALIVE
+
+ESCORT SHIP STATUS
+
+Escort ID: 1
+Type: E
+Position: (12.00, 4.00)
+Status: DESTROYED
+Time to hit: 0.78 seconds
+
+Escort ID: 2
+Type: E
+Position: (34.00, 2.00)
+Status: DESTROYED
+Time to hit: 0.07 seconds
+
+Escort ID: 3
+Type: E
+Position: (16.00, 44.00)
+Status: DESTROYED
+Time to hit: 1.55 seconds
+
+Escort ID: 4
+Type: B
+Position: (8.00, 23.00)
+Status: DESTROYED
+Time to hit: 1.14 seconds
+
+Escort ID: 5
+Type: B
+Position: (42.00, 10.00)
+Status: DESTROYED
+Time to hit: 0.35 seconds
+
+Escort ID: 6
+Type: C
+Position: (12.00, 42.00)
+Status: DESTROYED
+Time to hit: 1.55 seconds
+
+Escort ID: 7
+Type: B
+Position: (5.00, 32.00)
+Status: DESTROYED
+Time to hit: 1.43 seconds
+
+Escort ID: 8
+Type: C
+Position: (25.00, 22.00)
+Status: DESTROYED
+Time to hit: 0.71 seconds
+
+Escort ID: 9
+Type: D
+Position: (26.00, 32.00)
+Status: DESTROYED
+Time to hit: 1.03 seconds
+
+Escort ID: 10
+Type: A
+Position: (41.00, 40.00)
+Status: DESTROYED
+Time to hit: 1.30 seconds
