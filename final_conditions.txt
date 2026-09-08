@@ -1,69 +1,69 @@
 FINAL BATTLEFIELD CONDITIONS
 
 BATTLESHIP
-Type: S
-name: Sovetsky Soyuz-class
-position: (20.00, 43.00)
-maximum velocity: 40.00
+Type: M
+name: MS king George V
+position: (6.00, 36.00)
+maximum velocity: 45.00
 
 ESCORT SHIPS
 
 Escort Ship ID: 1
-type: E
-position: (12.00, 4.00)
-time to hit: 0.78 seconds
+type: C
+position: (34.00, 9.00)
+time to hit: 0.94 seconds
 status: DESTROYED
 
 Escort Ship ID: 2
-type: E
-position: (34.00, 2.00)
-time to hit: 0.07 seconds
+type: B
+position: (16.00, 21.00)
+time to hit: 0.82 seconds
 status: DESTROYED
 
 Escort Ship ID: 3
 type: E
-position: (16.00, 44.00)
-time to hit: 1.55 seconds
+position: (47.00, 47.00)
+time to hit: 0.45 seconds
 status: DESTROYED
 
 Escort Ship ID: 4
-type: B
-position: (8.00, 23.00)
-time to hit: 1.14 seconds
+type: D
+position: (13.00, 49.00)
+time to hit: 0.76 seconds
 status: DESTROYED
 
 Escort Ship ID: 5
-type: B
-position: (42.00, 10.00)
-time to hit: 0.35 seconds
+type: E
+position: (28.00, 33.00)
+time to hit: 0.29 seconds
 status: DESTROYED
 
 Escort Ship ID: 6
-type: C
-position: (12.00, 42.00)
-time to hit: 1.55 seconds
+type: B
+position: (0.00, 41.00)
+time to hit: 1.10 seconds
 status: DESTROYED
 
 Escort Ship ID: 7
-type: B
-position: (5.00, 32.00)
-time to hit: 1.43 seconds
+type: D
+position: (7.00, 43.00)
+time to hit: 0.89 seconds
 status: DESTROYED
 
 Escort Ship ID: 8
 type: C
-position: (25.00, 22.00)
-time to hit: 0.71 seconds
+position: (6.00, 45.00)
+time to hit: 0.93 seconds
 status: DESTROYED
 
 Escort Ship ID: 9
-type: D
-position: (26.00, 32.00)
-time to hit: 1.03 seconds
+type: B
+position: (21.00, 32.00)
+time to hit: 0.49 seconds
 status: DESTROYED
 
 Escort Ship ID: 10
-type: A
-position: (41.00, 40.00)
-time to hit: 1.30 seconds
+type: D
+position: (21.00, 10.00)
+time to hit: 1.01 seconds
 status: DESTROYED

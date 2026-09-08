@@ -33,6 +33,18 @@ typedef struct {
 //calculate maximum horizontal range
 double get_max_range(double max_v) {
        return(max_v * max_v * sin(2 * 45.0 * PI / 180.0)) / G;
+
+}
+
+//jammed_battleship_range
+double get_jammed_battleship_range(double velocity, double theta_min)
+{
+    double angle_rad;
+
+    angle_rad = theta_min * PI / 180.0;
+
+    return (velocity * velocity *
+            sin(2.0 * angle_rad)) / G;
 }
 
 //calculate minimum range for Eship
@@ -498,6 +510,106 @@ void save_part1b_iteration_result(Battleship b,
     fclose(file);
 }
 
+void save_part1b_sim2_result(Battleship b,
+                             EscortShip e[],
+                             int n,
+                             int iteration,
+                             int hit_this_iteration,
+                             int total_hit_count,
+                             int b_destroyed,
+                             int destroyer_id,
+                             double iteration_battle_time,
+                             int gun_jammed,
+                             double theta_min)
+{
+    FILE *file;
+    char filename[100];
+
+    sprintf(filename,
+            "part1b_sim2_iteration_%02d.txt",
+            iteration);
+
+    file = fopen(filename, "w");
+
+    if (file == NULL)
+    {
+        printf("Error opening %s\n", filename);
+        return;
+    }
+
+    fprintf(file, "PART 1B - SIMULATION 2\n\n");
+    fprintf(file, "Iteration: %d\n", iteration);
+
+    fprintf(file,
+            "Battleship Position: (%.2f, %.2f)\n",
+            b.x, b.y);
+
+    if (gun_jammed == 1)
+    {
+        fprintf(file, "Gun Status: JAMMED\n");
+
+        fprintf(file,
+                "Allowed Vertical Angle: %.2f - 90 degrees\n",
+                theta_min);
+    }
+    else
+    {
+        fprintf(file, "Gun Status: NORMAL\n");
+    }
+
+    fprintf(file,
+            "Escort Ships Destroyed This Iteration: %d\n",
+            hit_this_iteration);
+
+    fprintf(file,
+            "Total Escort Ships Destroyed: %d\n",
+            total_hit_count);
+
+    fprintf(file,
+            "Iteration Battle Time: %.2f seconds\n",
+            iteration_battle_time);
+
+    if (b_destroyed == 1)
+    {
+        fprintf(file, "Battleship Status: DESTROYED\n");
+
+        fprintf(file,
+                "Destroyed by Escort ID: %d\n",
+                destroyer_id);
+    }
+    else
+    {
+        fprintf(file, "Battleship Status: ALIVE\n");
+    }
+
+    fprintf(file, "\nESCORT SHIP STATUS\n");
+
+    for (int i = 0; i < n; i++)
+    {
+        fprintf(file, "\nEscort ID: %d\n", e[i].id);
+        fprintf(file, "Type: %c\n", e[i].type);
+
+        fprintf(file,
+                "Position: (%.2f, %.2f)\n",
+                e[i].x, e[i].y);
+
+        if (e[i].is_destroyed == 1)
+        {
+            fprintf(file, "Status: DESTROYED\n");
+
+            fprintf(file,
+                    "Time to Hit: %.2f seconds\n",
+                    e[i].time_to_hit);
+        }
+        else
+        {
+            fprintf(file, "Status: ALIVE\n");
+        }
+    }
+
+    fclose(file);
+}
+
 
 
    
@@ -511,6 +623,7 @@ int main()
 		        
     Battleship battleship;
     EscortShip escorts[100];
+    EscortShip original_escorts[100];
 
     int n;
     
@@ -635,6 +748,7 @@ int main()
             canvas_D,
             v_max_b
         );
+	original_escorts[i] = escorts[i];
     }
 
 
@@ -895,6 +1009,332 @@ int main()
 
      
     }
+
+    int t;
+    double theta_min;
+
+
+    printf(
+        "\n===== PART 1B SIMULATION 2 =====\n"
+    );
+
+
+    printf(
+        "Enter iteration t when gun becomes jammed: "
+    );
+
+    scanf("%d", &t);
+
+
+    printf(
+        "Enter theta_min (0 < theta_min < 30): "
+    );
+
+    scanf("%lf", &theta_min);
+
+
+    /* Validate Simulation 2 input */
+
+    if (t < 1 || t >= k)
+    {
+        printf(
+            "Invalid t. t must satisfy 1 <= t < k.\n"
+        );
+
+        return 1;
+    }
+
+
+    if (theta_min <= 0 ||
+        theta_min >= 30)
+    {
+        printf(
+            "Invalid theta_min. "
+            "It must be between 0 and 30.\n"
+        );
+
+        return 1;
+    }
+
+
+    /* ========================================= */
+    /* RESTORE SAME INITIAL CONDITIONS           */
+    /* ========================================= */
+
+    for (int i = 0; i < n; i++)
+    {
+        escorts[i] =
+            original_escorts[i];
+    }
+
+
+    /* Reset results */
+
+    hit_count = 0;
+    b_destroyed = 0;
+    destroyer_id = -1;
+    battle_time = 0.0;
+
+
+    /* Return Battleship to first path point */
+
+    battleship.x = path_x[0];
+    battleship.y = path_y[0];
+
+
+    
+   //SIMULATION 2 LOOP                         
+    
+
+    for (int p = 0;
+         p < k && b_destroyed == 0;
+         p++)
+    {
+        int hit_this_iteration = 0;
+
+        int gun_jammed = 0;
+
+        double iteration_battle_time = 0.0;
+
+
+        // Move Battleship 
+
+        battleship.x =
+            path_x[p];
+
+        battleship.y =
+            path_y[p];
+
+
+  
+
+        if ((p + 1) > t)
+        {
+            gun_jammed = 1;
+        }
+
+
+        printf(
+            "\n----------------------------------\n"
+        );
+
+        printf(
+            "SIMULATION 2 - ITERATION %d\n",
+            p + 1
+        );
+
+
+        printf(
+            "Battleship position: (%.2f, %.2f)\n",
+            battleship.x,
+            battleship.y
+        );
+
+
+        if (gun_jammed == 1)
+        {
+            printf(
+                "Gun Status: JAMMED\n"
+            );
+
+            printf(
+                "Allowed vertical angle: "
+                "%.2f - 90 degrees\n",
+                theta_min
+            );
+        }
+        else
+        {
+            printf(
+                "Gun Status: NORMAL\n"
+            );
+        }
+
+
+        
+        //BATTLESHIP ATTACKS ESCORT SHIPS      
+      
+
+        for (int i = 0; i < n; i++)
+        {
+            double distance;
+            double max_range;
+            double time_to_hit;
+
+
+            /* Skip destroyed escorts */
+
+            if (escorts[i].is_destroyed == 1)
+            {
+                continue;
+            }
+
+
+            distance =
+                get_distance(
+                    battleship.x,
+                    battleship.y,
+                    escorts[i].x,
+                    escorts[i].y
+                );
+
+
+            
+               //Normal gun uses normal maximum ran
+            
+
+            if (gun_jammed == 1)
+            {
+                max_range =
+                    get_jammed_battleship_range(
+                        battleship.max_v,
+                        theta_min
+                    );
+            }
+            else
+            {
+                max_range =
+                    get_max_range(
+                        battleship.max_v
+                    );
+            }
+
+
+            if (distance <= max_range)
+            {
+                escorts[i].is_destroyed = 1;
+
+
+                time_to_hit =
+                    get_time_to_hit(
+                        distance,
+                        battleship.max_v
+                    );
+
+
+                escorts[i].time_to_hit =
+                    time_to_hit;
+
+
+                hit_count++;
+                hit_this_iteration++;
+
+
+                if (time_to_hit >
+                    iteration_battle_time)
+                {
+                    iteration_battle_time =
+                        time_to_hit;
+                }
+
+
+                if (time_to_hit >
+                    battle_time)
+                {
+                    battle_time =
+                        time_to_hit;
+                }
+
+
+                printf(
+                    "Battleship destroyed "
+                    "Escort Ship %d\n",
+                    escorts[i].id
+                );
+            }
+        }
+
+
+        
+         //REMAINING ESCORTS ATTACK BATTLESHIP  
+        
+
+        for (int i = 0; i < n; i++)
+        {
+            double min_range;
+            double max_range;
+
+
+            if (escorts[i].is_destroyed == 1)
+            {
+                continue;
+            }
+
+
+            min_range =
+                get_min_range_escort(
+                    escorts[i].min_v,
+                    escorts[i].min_angle
+                );
+
+
+            max_range =
+                get_max_range(
+                    escorts[i].max_v
+                );
+
+
+            if (is_in_range(
+                    escorts[i].x,
+                    escorts[i].y,
+                    min_range,
+                    max_range,
+                    battleship.x,
+                    battleship.y))
+            {
+                b_destroyed = 1;
+
+                destroyer_id =
+                    escorts[i].id;
+
+
+                printf(
+                    "Escort Ship %d "
+                    "destroyed the Battleship\n",
+                    escorts[i].id
+                );
+
+
+                break;
+            }
+        }
+
+
+        // SAVE SIMULATION 2 ITERATION           
+     
+
+        save_part1b_sim2_result(
+            battleship,
+            escorts,
+            n,
+            p + 1,
+            hit_this_iteration,
+            hit_count,
+            b_destroyed,
+            destroyer_id,
+            iteration_battle_time,
+            gun_jammed,
+            theta_min
+        );
+
+
+        printf(
+            "End of Simulation 2 iteration %d\n",
+            p + 1
+        );
+
+
+        if (b_destroyed == 1)
+        {
+            printf(
+                "\nBattleship destroyed. "
+                "Simulation 2 stopped.\n"
+            );
+
+            break;
+        }
+    }
+
 
 
     
