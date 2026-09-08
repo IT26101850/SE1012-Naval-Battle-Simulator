@@ -5,157 +5,147 @@ Battleship type: S
 
 result: BATTLESHIP SURVIVED
 
-number of Escort Ships hit: 75
-battle end time: 1.70 seconds
+number of Escort Ships hit: 1750
+battle end time: 3.96 seconds
 
 ESCORT SHIPS HIT BY BATTLESHIP
 status: DESTROYED
-time to hit: 0.95 seconds
-status: DESTROYED
-time to hit: 1.26 seconds
-status: DESTROYED
-time to hit: 0.80 seconds
-status: DESTROYED
-time to hit: 0.87 seconds
-status: DESTROYED
-time to hit: 1.61 seconds
-status: DESTROYED
-time to hit: 1.45 seconds
-status: DESTROYED
-time to hit: 1.08 seconds
-status: DESTROYED
-time to hit: 0.80 seconds
-status: DESTROYED
 time to hit: 1.15 seconds
 status: DESTROYED
-time to hit: 1.04 seconds
+time to hit: 1.57 seconds
 status: DESTROYED
-time to hit: 0.78 seconds
-status: DESTROYED
-time to hit: 1.48 seconds
-status: DESTROYED
-time to hit: 0.99 seconds
-status: DESTROYED
-time to hit: 1.04 seconds
-status: DESTROYED
-time to hit: 1.21 seconds
-status: DESTROYED
-time to hit: 1.26 seconds
-status: DESTROYED
-time to hit: 1.39 seconds
-status: DESTROYED
-time to hit: 0.70 seconds
-status: DESTROYED
-time to hit: 1.04 seconds
+time to hit: 0.37 seconds
 status: DESTROYED
 time to hit: 0.94 seconds
 status: DESTROYED
+time to hit: 1.47 seconds
+status: DESTROYED
+time to hit: 1.80 seconds
+status: DESTROYED
 time to hit: 1.36 seconds
-status: DESTROYED
-time to hit: 1.01 seconds
-status: DESTROYED
-time to hit: 0.44 seconds
-status: DESTROYED
-time to hit: 1.38 seconds
-status: DESTROYED
-time to hit: 1.60 seconds
-status: DESTROYED
-time to hit: 0.88 seconds
 status: DESTROYED
 time to hit: 0.84 seconds
 status: DESTROYED
-time to hit: 0.69 seconds
+time to hit: 2.29 seconds
 status: DESTROYED
-time to hit: 1.06 seconds
+time to hit: 0.74 seconds
 status: DESTROYED
-time to hit: 0.71 seconds
+time to hit: 1.45 seconds
+status: DESTROYED
+time to hit: 1.75 seconds
+status: DESTROYED
+time to hit: 1.17 seconds
 status: DESTROYED
 time to hit: 0.51 seconds
 status: DESTROYED
-time to hit: 1.49 seconds
-status: DESTROYED
-time to hit: 1.02 seconds
-status: DESTROYED
-time to hit: 0.97 seconds
-status: DESTROYED
-time to hit: 1.00 seconds
-status: DESTROYED
-time to hit: 1.70 seconds
-status: DESTROYED
-time to hit: 0.34 seconds
-status: DESTROYED
-time to hit: 1.46 seconds
-status: DESTROYED
-time to hit: 0.50 seconds
-status: DESTROYED
-time to hit: 0.81 seconds
-status: DESTROYED
-time to hit: 1.60 seconds
-status: DESTROYED
-time to hit: 0.90 seconds
-status: DESTROYED
-time to hit: 0.91 seconds
+time to hit: 1.55 seconds
 status: DESTROYED
 time to hit: 1.30 seconds
 status: DESTROYED
-time to hit: 0.85 seconds
+time to hit: 0.54 seconds
+status: DESTROYED
+time to hit: 0.44 seconds
+status: DESTROYED
+time to hit: 0.09 seconds
+status: DESTROYED
+time to hit: 2.06 seconds
+status: DESTROYED
+time to hit: 1.59 seconds
+status: DESTROYED
+time to hit: 1.28 seconds
+status: DESTROYED
+time to hit: 0.30 seconds
+status: DESTROYED
+time to hit: 1.76 seconds
+status: DESTROYED
+time to hit: 1.45 seconds
+status: DESTROYED
+time to hit: 0.37 seconds
+status: DESTROYED
+time to hit: 1.68 seconds
+status: DESTROYED
+time to hit: 1.63 seconds
+status: DESTROYED
+time to hit: 1.00 seconds
+status: DESTROYED
+time to hit: 0.37 seconds
+status: DESTROYED
+time to hit: 1.17 seconds
 status: DESTROYED
 time to hit: 1.16 seconds
 status: DESTROYED
-time to hit: 0.16 seconds
+time to hit: 0.93 seconds
+status: DESTROYED
+time to hit: 1.28 seconds
+status: DESTROYED
+time to hit: 1.89 seconds
+status: DESTROYED
+time to hit: 1.90 seconds
+status: DESTROYED
+time to hit: 0.61 seconds
+status: DESTROYED
+time to hit: 0.49 seconds
+status: DESTROYED
+time to hit: 1.31 seconds
+status: DESTROYED
+time to hit: 0.88 seconds
+status: DESTROYED
+time to hit: 1.31 seconds
+status: DESTROYED
+time to hit: 1.47 seconds
+status: DESTROYED
+time to hit: 1.23 seconds
+status: DESTROYED
+time to hit: 1.17 seconds
+status: DESTROYED
+time to hit: 1.70 seconds
+status: DESTROYED
+time to hit: 1.09 seconds
+status: DESTROYED
+time to hit: 0.17 seconds
+status: DESTROYED
+time to hit: 2.31 seconds
+status: DESTROYED
+time to hit: 0.97 seconds
 status: DESTROYED
 time to hit: 1.20 seconds
 status: DESTROYED
-time to hit: 1.24 seconds
+time to hit: 1.65 seconds
 status: DESTROYED
-time to hit: 1.45 seconds
+time to hit: 1.28 seconds
 status: DESTROYED
-time to hit: 1.35 seconds
+time to hit: 1.90 seconds
 status: DESTROYED
-time to hit: 0.62 seconds
+time to hit: 1.46 seconds
 status: DESTROYED
-time to hit: 1.08 seconds
+time to hit: 0.66 seconds
 status: DESTROYED
-time to hit: 1.16 seconds
+time to hit: 1.80 seconds
 status: DESTROYED
-time to hit: 0.54 seconds
+time to hit: 0.82 seconds
 status: DESTROYED
-time to hit: 0.99 seconds
+time to hit: 1.55 seconds
 status: DESTROYED
-time to hit: 1.62 seconds
-status: DESTROYED
-time to hit: 0.68 seconds
-status: DESTROYED
-time to hit: 1.43 seconds
-status: DESTROYED
-time to hit: 1.06 seconds
-status: DESTROYED
-time to hit: 0.77 seconds
-status: DESTROYED
-time to hit: 1.24 seconds
-status: DESTROYED
-time to hit: 1.27 seconds
-status: DESTROYED
-time to hit: 0.92 seconds
-status: DESTROYED
-time to hit: 1.45 seconds
-status: DESTROYED
-time to hit: 0.76 seconds
-status: DESTROYED
-time to hit: 1.56 seconds
-status: DESTROYED
-time to hit: 0.76 seconds
-status: DESTROYED
-time to hit: 1.26 seconds
+time to hit: 1.55 seconds
 status: DESTROYED
 time to hit: 0.91 seconds
 status: DESTROYED
-time to hit: 1.54 seconds
+time to hit: 1.68 seconds
 status: DESTROYED
-time to hit: 0.52 seconds
+time to hit: 1.65 seconds
 status: DESTROYED
-time to hit: 0.59 seconds
+time to hit: 1.30 seconds
 status: DESTROYED
-time to hit: 1.02 seconds
+time to hit: 1.09 seconds
 status: DESTROYED
-time to hit: 0.55 seconds
+time to hit: 1.41 seconds
+status: DESTROYED
+time to hit: 1.89 seconds
+status: DESTROYED
+time to hit: 1.23 seconds
+status: DESTROYED
+time to hit: 1.42 seconds
+status: DESTROYED
+time to hit: 0.81 seconds
+status: DESTROYED
+time to hit: 1.23 seconds

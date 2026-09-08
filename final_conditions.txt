@@ -3,457 +3,427 @@ FINAL BATTLEFIELD CONDITIONS
 BATTLESHIP
 Type: S
 name: Sovetsky Soyuz-class
-position: (44.00, 58.00)
-maximum velocity: 50.00
+position: (38.00, 53.00)
+maximum velocity: 45.00
 
 ESCORT SHIPS
 
 Escort Ship ID: 1
-type: C
-position: (31.00, 89.00)
-time to hit: 0.95 seconds
-status: DESTROYED
-
-Escort Ship ID: 2
-type: D
-position: (75.00, 26.00)
-time to hit: 1.26 seconds
-status: DESTROYED
-
-Escort Ship ID: 3
-type: E
-position: (31.00, 33.00)
-time to hit: 0.80 seconds
-status: DESTROYED
-
-Escort Ship ID: 4
-type: E
-position: (38.00, 28.00)
-time to hit: 0.87 seconds
-status: DESTROYED
-
-Escort Ship ID: 5
-type: E
-position: (98.00, 76.00)
-time to hit: 1.61 seconds
-status: DESTROYED
-
-Escort Ship ID: 6
-type: D
-position: (55.00, 8.00)
-time to hit: 1.45 seconds
-status: DESTROYED
-
-Escort Ship ID: 7
-type: D
-position: (6.00, 59.00)
-time to hit: 1.08 seconds
-status: DESTROYED
-
-Escort Ship ID: 8
-type: D
-position: (64.00, 78.00)
-time to hit: 0.80 seconds
-status: DESTROYED
-
-Escort Ship ID: 9
-type: B
-position: (78.00, 36.00)
+type: A
+position: (44.00, 17.00)
 time to hit: 1.15 seconds
 status: DESTROYED
 
-Escort Ship ID: 10
+Escort Ship ID: 2
 type: E
-position: (65.00, 88.00)
-time to hit: 1.04 seconds
+position: (80.00, 26.00)
+time to hit: 1.57 seconds
+status: DESTROYED
+
+Escort Ship ID: 3
+type: D
+position: (34.00, 42.00)
+time to hit: 0.37 seconds
+status: DESTROYED
+
+Escort Ship ID: 4
+type: C
+position: (25.00, 80.00)
+time to hit: 0.94 seconds
+status: DESTROYED
+
+Escort Ship ID: 5
+type: C
+position: (54.00, 9.00)
+time to hit: 1.47 seconds
+status: DESTROYED
+
+Escort Ship ID: 6
+type: C
+position: (4.00, 99.00)
+time to hit: 1.80 seconds
+status: DESTROYED
+
+Escort Ship ID: 7
+type: C
+position: (42.00, 10.00)
+time to hit: 1.36 seconds
+status: DESTROYED
+
+Escort Ship ID: 8
+type: B
+position: (63.00, 44.00)
+time to hit: 0.84 seconds
+status: DESTROYED
+
+Escort Ship ID: 9
+type: D
+position: (92.00, 4.00)
+time to hit: 2.29 seconds
+status: DESTROYED
+
+Escort Ship ID: 10
+type: D
+position: (61.00, 58.00)
+time to hit: 0.74 seconds
 status: DESTROYED
 
 Escort Ship ID: 11
-type: E
-position: (59.00, 35.00)
-time to hit: 0.78 seconds
+type: D
+position: (35.00, 99.00)
+time to hit: 1.45 seconds
 status: DESTROYED
 
 Escort Ship ID: 12
-type: A
-position: (4.00, 24.00)
-time to hit: 1.48 seconds
+type: E
+position: (5.00, 8.00)
+time to hit: 1.75 seconds
 status: DESTROYED
 
 Escort Ship ID: 13
 type: E
-position: (79.00, 58.00)
-time to hit: 0.99 seconds
+position: (19.00, 85.00)
+time to hit: 1.17 seconds
 status: DESTROYED
 
 Escort Ship ID: 14
 type: B
-position: (64.00, 89.00)
-time to hit: 1.04 seconds
+position: (27.00, 41.00)
+time to hit: 0.51 seconds
 status: DESTROYED
 
 Escort Ship ID: 15
-type: B
-position: (84.00, 73.00)
-time to hit: 1.21 seconds
+type: C
+position: (9.00, 93.00)
+time to hit: 1.55 seconds
 status: DESTROYED
 
 Escort Ship ID: 16
-type: D
-position: (77.00, 28.00)
-time to hit: 1.26 seconds
+type: B
+position: (73.00, 75.00)
+time to hit: 1.30 seconds
 status: DESTROYED
 
 Escort Ship ID: 17
-type: E
-position: (24.00, 13.00)
-time to hit: 1.39 seconds
+type: C
+position: (55.00, 51.00)
+time to hit: 0.54 seconds
 status: DESTROYED
 
 Escort Ship ID: 18
-type: D
-position: (66.00, 69.00)
-time to hit: 0.70 seconds
+type: B
+position: (50.00, 46.00)
+time to hit: 0.44 seconds
 status: DESTROYED
 
 Escort Ship ID: 19
 type: C
-position: (10.00, 72.00)
-time to hit: 1.04 seconds
+position: (38.00, 50.00)
+time to hit: 0.09 seconds
 status: DESTROYED
 
 Escort Ship ID: 20
-type: B
-position: (46.00, 91.00)
-time to hit: 0.94 seconds
+type: C
+position: (79.00, 2.00)
+time to hit: 2.06 seconds
 status: DESTROYED
 
 Escort Ship ID: 21
-type: C
-position: (80.00, 26.00)
-time to hit: 1.36 seconds
+type: B
+position: (85.00, 34.00)
+time to hit: 1.59 seconds
 status: DESTROYED
 
 Escort Ship ID: 22
-type: D
-position: (30.00, 91.00)
-time to hit: 1.01 seconds
+type: A
+position: (70.00, 78.00)
+time to hit: 1.28 seconds
 status: DESTROYED
 
 Escort Ship ID: 23
 type: D
-position: (33.00, 69.00)
-time to hit: 0.44 seconds
+position: (43.00, 61.00)
+time to hit: 0.30 seconds
 status: DESTROYED
 
 Escort Ship ID: 24
-type: E
-position: (92.00, 50.00)
-time to hit: 1.38 seconds
+type: A
+position: (0.00, 12.00)
+time to hit: 1.76 seconds
 status: DESTROYED
 
 Escort Ship ID: 25
 type: B
-position: (78.00, 13.00)
-time to hit: 1.60 seconds
+position: (40.00, 7.00)
+time to hit: 1.45 seconds
 status: DESTROYED
 
 Escort Ship ID: 26
-type: A
-position: (13.00, 60.00)
-time to hit: 0.88 seconds
+type: E
+position: (27.00, 49.00)
+time to hit: 0.37 seconds
 status: DESTROYED
 
 Escort Ship ID: 27
-type: D
-position: (64.00, 80.00)
-time to hit: 0.84 seconds
+type: A
+position: (88.00, 34.00)
+time to hit: 1.68 seconds
 status: DESTROYED
 
 Escort Ship ID: 28
 type: B
-position: (68.00, 54.00)
-time to hit: 0.69 seconds
+position: (60.00, 6.00)
+time to hit: 1.63 seconds
 status: DESTROYED
 
 Escort Ship ID: 29
-type: B
-position: (33.00, 22.00)
-time to hit: 1.06 seconds
+type: D
+position: (60.00, 30.00)
+time to hit: 1.00 seconds
 status: DESTROYED
 
 Escort Ship ID: 30
-type: E
-position: (56.00, 36.00)
-time to hit: 0.71 seconds
+type: C
+position: (27.00, 57.00)
+time to hit: 0.37 seconds
 status: DESTROYED
 
 Escort Ship ID: 31
-type: A
-position: (52.00, 42.00)
-time to hit: 0.51 seconds
+type: B
+position: (53.00, 19.00)
+time to hit: 1.17 seconds
 status: DESTROYED
 
 Escort Ship ID: 32
-type: A
-position: (91.00, 82.00)
-time to hit: 1.49 seconds
+type: D
+position: (63.00, 26.00)
+time to hit: 1.16 seconds
 status: DESTROYED
 
 Escort Ship ID: 33
-type: B
-position: (67.00, 86.00)
-time to hit: 1.02 seconds
+type: C
+position: (64.00, 39.00)
+time to hit: 0.93 seconds
 status: DESTROYED
 
 Escort Ship ID: 34
 type: C
-position: (11.00, 67.00)
-time to hit: 0.97 seconds
+position: (1.00, 36.00)
+time to hit: 1.28 seconds
 status: DESTROYED
 
 Escort Ship ID: 35
 type: A
-position: (69.00, 33.00)
-time to hit: 1.00 seconds
+position: (94.00, 31.00)
+time to hit: 1.89 seconds
 status: DESTROYED
 
 Escort Ship ID: 36
-type: E
-position: (89.00, 98.00)
-time to hit: 1.70 seconds
+type: B
+position: (98.00, 46.00)
+time to hit: 1.90 seconds
 status: DESTROYED
 
 Escort Ship ID: 37
-type: C
-position: (53.00, 50.00)
-time to hit: 0.34 seconds
+type: A
+position: (20.00, 60.00)
+time to hit: 0.61 seconds
 status: DESTROYED
 
 Escort Ship ID: 38
 type: A
-position: (9.00, 96.00)
-time to hit: 1.46 seconds
+position: (34.00, 68.00)
+time to hit: 0.49 seconds
 status: DESTROYED
 
 Escort Ship ID: 39
-type: C
-position: (39.00, 41.00)
-time to hit: 0.50 seconds
+type: E
+position: (17.00, 89.00)
+time to hit: 1.31 seconds
 status: DESTROYED
 
 Escort Ship ID: 40
-type: C
-position: (71.00, 68.00)
-time to hit: 0.81 seconds
+type: E
+position: (35.00, 81.00)
+time to hit: 0.88 seconds
 status: DESTROYED
 
 Escort Ship ID: 41
-type: C
-position: (16.00, 9.00)
-time to hit: 1.60 seconds
+type: E
+position: (30.00, 12.00)
+time to hit: 1.31 seconds
 status: DESTROYED
 
 Escort Ship ID: 42
-type: A
-position: (31.00, 87.00)
-time to hit: 0.90 seconds
+type: D
+position: (72.00, 85.00)
+time to hit: 1.47 seconds
 status: DESTROYED
 
 Escort Ship ID: 43
-type: D
-position: (13.00, 50.00)
-time to hit: 0.91 seconds
+type: E
+position: (51.00, 90.00)
+time to hit: 1.23 seconds
 status: DESTROYED
 
 Escort Ship ID: 44
-type: E
-position: (11.00, 26.00)
-time to hit: 1.30 seconds
+type: D
+position: (16.00, 83.00)
+time to hit: 1.17 seconds
 status: DESTROYED
 
 Escort Ship ID: 45
-type: D
-position: (74.00, 55.00)
-time to hit: 0.85 seconds
+type: C
+position: (83.00, 23.00)
+time to hit: 1.70 seconds
 status: DESTROYED
 
 Escort Ship ID: 46
-type: A
-position: (85.00, 55.00)
-time to hit: 1.16 seconds
+type: D
+position: (63.00, 29.00)
+time to hit: 1.09 seconds
 status: DESTROYED
 
 Escort Ship ID: 47
-type: C
-position: (49.00, 61.00)
-time to hit: 0.16 seconds
+type: D
+position: (40.00, 48.00)
+time to hit: 0.17 seconds
 status: DESTROYED
 
 Escort Ship ID: 48
-type: C
-position: (9.00, 34.00)
-time to hit: 1.20 seconds
+type: B
+position: (90.00, 1.00)
+time to hit: 2.31 seconds
 status: DESTROYED
 
 Escort Ship ID: 49
 type: C
-position: (84.00, 76.00)
-time to hit: 1.24 seconds
+position: (13.00, 71.00)
+time to hit: 0.97 seconds
 status: DESTROYED
 
 Escort Ship ID: 50
-type: C
-position: (90.00, 35.00)
-time to hit: 1.45 seconds
+type: D
+position: (57.00, 86.00)
+time to hit: 1.20 seconds
 status: DESTROYED
 
 Escort Ship ID: 51
-type: D
-position: (73.00, 20.00)
-time to hit: 1.35 seconds
+type: E
+position: (11.00, 8.00)
+time to hit: 1.65 seconds
 status: DESTROYED
 
 Escort Ship ID: 52
 type: B
-position: (22.00, 56.00)
-time to hit: 0.62 seconds
+position: (74.00, 72.00)
+time to hit: 1.28 seconds
 status: DESTROYED
 
 Escort Ship ID: 53
 type: C
-position: (6.00, 56.00)
-time to hit: 1.08 seconds
+position: (77.00, 7.00)
+time to hit: 1.90 seconds
 status: DESTROYED
 
 Escort Ship ID: 54
-type: D
-position: (21.00, 24.00)
-time to hit: 1.16 seconds
+type: E
+position: (77.00, 78.00)
+time to hit: 1.46 seconds
 status: DESTROYED
 
 Escort Ship ID: 55
 type: E
-position: (25.00, 57.00)
-time to hit: 0.54 seconds
+position: (56.00, 64.00)
+time to hit: 0.66 seconds
 status: DESTROYED
 
 Escort Ship ID: 56
-type: E
-position: (10.00, 50.00)
-time to hit: 0.99 seconds
+type: A
+position: (89.00, 27.00)
+time to hit: 1.80 seconds
 status: DESTROYED
 
 Escort Ship ID: 57
-type: E
-position: (72.00, 8.00)
-time to hit: 1.62 seconds
+type: A
+position: (64.00, 55.00)
+time to hit: 0.82 seconds
 status: DESTROYED
 
 Escort Ship ID: 58
-type: C
-position: (20.00, 57.00)
-time to hit: 0.68 seconds
+type: D
+position: (14.00, 10.00)
+time to hit: 1.55 seconds
 status: DESTROYED
 
 Escort Ship ID: 59
-type: A
-position: (83.00, 90.00)
-time to hit: 1.43 seconds
+type: D
+position: (82.00, 75.00)
+time to hit: 1.55 seconds
 status: DESTROYED
 
 Escort Ship ID: 60
-type: A
-position: (79.00, 71.00)
-time to hit: 1.06 seconds
-status: DESTROYED
-
-Escort Ship ID: 61
-type: A
-position: (70.00, 50.00)
-time to hit: 0.77 seconds
-status: DESTROYED
-
-Escort Ship ID: 62
-type: C
-position: (86.00, 45.00)
-time to hit: 1.24 seconds
-status: DESTROYED
-
-Escort Ship ID: 63
-type: B
-position: (8.00, 31.00)
-time to hit: 1.27 seconds
-status: DESTROYED
-
-Escort Ship ID: 64
-type: E
-position: (14.00, 45.00)
-time to hit: 0.92 seconds
-status: DESTROYED
-
-Escort Ship ID: 65
-type: E
-position: (88.00, 84.00)
-time to hit: 1.45 seconds
-status: DESTROYED
-
-Escort Ship ID: 66
 type: D
-position: (24.00, 40.00)
-time to hit: 0.76 seconds
-status: DESTROYED
-
-Escort Ship ID: 67
-type: D
-position: (96.00, 76.00)
-time to hit: 1.56 seconds
-status: DESTROYED
-
-Escort Ship ID: 68
-type: D
-position: (30.00, 35.00)
-time to hit: 0.76 seconds
-status: DESTROYED
-
-Escort Ship ID: 69
-type: D
-position: (88.00, 51.00)
-time to hit: 1.26 seconds
-status: DESTROYED
-
-Escort Ship ID: 70
-type: C
-position: (40.00, 90.00)
+position: (67.00, 53.00)
 time to hit: 0.91 seconds
 status: DESTROYED
 
-Escort Ship ID: 71
+Escort Ship ID: 61
 type: B
-position: (51.00, 4.00)
-time to hit: 1.54 seconds
+position: (91.00, 59.00)
+time to hit: 1.68 seconds
 status: DESTROYED
 
-Escort Ship ID: 72
-type: B
-position: (58.00, 46.00)
-time to hit: 0.52 seconds
+Escort Ship ID: 62
+type: E
+position: (50.00, 2.00)
+time to hit: 1.65 seconds
 status: DESTROYED
 
-Escort Ship ID: 73
-type: B
-position: (23.00, 59.00)
-time to hit: 0.59 seconds
+Escort Ship ID: 63
+type: E
+position: (13.00, 86.00)
+time to hit: 1.30 seconds
 status: DESTROYED
 
-Escort Ship ID: 74
+Escort Ship ID: 64
+type: D
+position: (70.00, 40.00)
+time to hit: 1.09 seconds
+status: DESTROYED
+
+Escort Ship ID: 65
 type: A
-position: (44.00, 22.00)
-time to hit: 1.02 seconds
+position: (60.00, 92.00)
+time to hit: 1.41 seconds
 status: DESTROYED
 
-Escort Ship ID: 75
+Escort Ship ID: 66
 type: B
-position: (37.00, 40.00)
-time to hit: 0.55 seconds
+position: (80.00, 10.00)
+time to hit: 1.89 seconds
+status: DESTROYED
+
+Escort Ship ID: 67
+type: A
+position: (25.00, 16.00)
+time to hit: 1.23 seconds
+status: DESTROYED
+
+Escort Ship ID: 68
+type: A
+position: (55.00, 95.00)
+time to hit: 1.42 seconds
+status: DESTROYED
+
+Escort Ship ID: 69
+type: A
+position: (29.00, 29.00)
+time to hit: 0.81 seconds
+status: DESTROYED
+
+Escort Ship ID: 70
+type: B
+position: (77.00, 53.00)
+time to hit: 1.23 seconds
 status: DESTROYED

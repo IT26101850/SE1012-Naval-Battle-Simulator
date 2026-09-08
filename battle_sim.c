@@ -312,6 +312,7 @@ int main()
     EscortShip escorts[100];
 
     int n;
+    
     double canvas_D;
     double v_max_b;
     char type;
@@ -346,6 +347,7 @@ int main()
     //create battleship
     init_battleship(&battleship, type, v_max_b, 50, 50);
 
+
     //generate random path points
     for (int i = 0; i < k; i++)
     {
@@ -358,17 +360,18 @@ int main()
 			    path_y[i]);
     }
 
-    //move battleship through the generated path
+    //move battleship through paths
     for (int i = 0; i < k; i++)
     {
 	    battleship.x = path_x[i];
 	    battleship.y = path_y[i];
 
-	    printf("Battleship moved to point %d: (%.2f, %.2f)\n",
+	    printf("battleship moved to point %d: (%.2f, %.2f)\n",
 			    i + 1,
 			    battleship.x,
 			    battleship.y);
     }
+		 
 
 
 
@@ -393,7 +396,7 @@ int main()
 
     printf("\n BATTLE STARTED \n");
 
-    //simulation
+    //simulation1
     for (int p = 0; p < k; p++)
     {
 	    printf("\n ITERANTION %d\n", p + 1);
@@ -403,7 +406,7 @@ int main()
 	    battleship.y = path_y[p];
 
 	    printf("battleship position: (%.2f, %.2f)\n", battleship.x, battleship.y);
-    }
+    
 
     // Battleship attacks Escort Ships
     for (int i = 0; i < n; i++)
@@ -420,6 +423,10 @@ int main()
         );
 
         max_range = get_max_range(battleship.max_v);
+
+	printf("Escort Ship %d distance: %.2f\n",
+			escorts[i].id,
+			distance);
 
         if (distance <= max_range)
         {
@@ -445,16 +452,18 @@ int main()
                    escorts[i].id);
 	    printf("time to hit: %.2f seconds\n", time_to_hit);
 	}
+	else
+	{
+		printf("Escort Ship %d is outside battleship range\n", escorts[i].id);
+	}
     }
-        
     
-    
-    
-
-
-    // Remaining Escort Ships attack Battleship
+	
+	
+     // Remaining Escort Ships attack Battleship
     for (int i = 0; i < n; i++)
     {
+   
         double min_range;
         double max_range;
 
@@ -487,6 +496,12 @@ int main()
             }
         }
     }
+
+    printf("end of iteration %d\n", p + 1);
+    }
+    
+    
+    
 
     //display final results
     printf("\nBATTLE RESULT\n");
