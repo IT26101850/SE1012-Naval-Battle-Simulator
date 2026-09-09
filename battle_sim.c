@@ -32,6 +32,14 @@ typedef struct {
 	double firing_delay;
 }Battleship;
 
+double escort_TE[5];
+int part2b_mode = 0;
+
+double get_escort_TE(char type)
+{
+	return escort_TE[type - 'A'];
+}
+
 //calculate maximum horizontal range
 double get_max_range(double max_v) {
        return(max_v * max_v * sin(2 * 45.0 * PI / 180.0)) / G;
@@ -802,20 +810,11 @@ int part1c_escort_attack(
 
             e[i].has_fired = 1;
 
-
-            /*
-               Add its impact power instead
-               of instantly destroying B.
-            */
-
             *cumulative_impact +=
                 e[i].impact_power;
 
 
-            printf(
-                "Escort Ship %d hit Battleship\n",
-                e[i].id
-            );
+           printf("Escort Ship %d hit Battleship\n",e[i].id);
 
             printf(
                 "Impact Power: %.2f\n",
@@ -828,20 +827,13 @@ int part1c_escort_attack(
                 *cumulative_impact * 100.0
             );
 
-
-            /*
-               Battleship destroyed only
-               after total damage reaches 100%
-            */
-
             if (*cumulative_impact >= 1.0)
             {
                 *destroyer_id =
                     e[i].id;
 
-                printf(
-                    "Battleship DESTROYED by cumulative damage!\n"
-                );
+                printf("battleship DESTROYED by cumulative damage!\n");
+                                 
 
                 return 1;
             }
@@ -1077,6 +1069,15 @@ int part2a_battleship_attack(
 
     return target_count;
 }
+int part2b_escort_attack(
+    Battleship b,
+    EscortShip e[],
+    int n,
+    double battle_time,
+    double *impact,
+    int *destroyer_id,
+    FILE *file
+);
 
 void run_part2a_scenario(
     const char *title,
@@ -1237,18 +1238,15 @@ void run_part2a_scenario(
 
         if (cumulative_mode == 1)
         {
-            b_destroyed =
-                part1c_escort_attack(
-                    b,
-                    temp,
-                    n,
-                    &cumulative_impact,
-                    &destroyer_id
-                );
+            if (part2b_mode == 1)
+
+    b_destroyed = part2b_escort_attack(b, temp, n, battle_time, &cumulative_impact, &destroyer_id, file);
+	    else
+		    b_destroyed = part1c_escort_attack(b, temp, n, &cumulative_impact, &destroyer_id);
+                        
 
 
-            fprintf(
-                file, "Cumulative Impact: %.2f\n", cumulative_impact );
+            fprintf( file, "Cumulative Impact: %.2f\n", cumulative_impact );
 
             fprintf( file, "Damage Percentage: %.2f%%\n", cumulative_impact * 100.0 );
         }
@@ -1308,7 +1306,7 @@ void run_part2a_scenario(
                     );
 
 
-                    fprintf( file, "Battleship destroyed by Escort ID: %d\n", temp[i].id );
+                    fprintf(file, "Battleship destroyed by Escort ID: %d\n", temp[i].id );
 
                     break;
                 }
@@ -1329,44 +1327,61 @@ void run_part2a_scenario(
 
     /* Final scenario summary */
 
-    fprintf(
-        file,
-        "\nScenario Summary\n"
-    );
+    fprintf(file, "\nScenario Summary\n" );
 
-    fprintf(
-        file,
-        "Total Escorts Attacked: %d\n",
-        total_attacked
-    );
+    fprintf(file,"Total Escorts Attacked: %d\n",total_attacked);
 
-    fprintf(
-        file,
-        "Battle Time: %.2f seconds\n",
-        battle_time
-    );
-
-
+    fprintf(file,"Battle Time: %.2f seconds\n",battle_time);
     if (b_destroyed == 1)
     {
-        fprintf(
-            file,
-            "Final Battleship Status: DESTROYED\n"
-        );
+        fprintf(file,"Final Battleship Status: DESTROYED\n");
 
-        fprintf(
-            file,
-            "Final damaging Escort ID: %d\n",
-            destroyer_id
-        );
+        fprintf(file,"Final damaging Escort ID: %d\n", destroyer_id);
     }
     else
     {
-        fprintf(
-            file,
-            "Final Battleship Status: SURVIVED\n"
-        );
+        fprintf(file, "Final Battleship Status: SURVIVED\n");
     }
+}
+int part2b_escort_attack(
+    Battleship b,
+    EscortShip e[],
+    int n,
+    double battle_time,
+    double *impact,
+    int *destroyer_id,
+    FILE *file)
+{
+    for (int i = 0; i < n; i++)
+    {
+        if (e[i].is_destroyed)
+            continue;
+
+        double min_r = get_min_range_escort(
+            e[i].min_v, e[i].min_angle);
+
+        double max_r = get_max_range(e[i].max_v);
+
+        if (is_in_range(
+            e[i].x, e[i].y,
+            min_r, max_r,
+            b.x, b.y))
+        {
+            double TE = get_escort_TE(e[i].type);
+            int shots = 1 + (int)(battle_time / TE);
+
+            *impact += shots * e[i].impact_power;
+
+            fprintf(file, "Escort %d | T_E %.2f | Shots %d | Damage %.2f%%\n", e[i].id, TE, shots, shots * e[i].impact_power * 100.0);
+	    if (*impact >= 1.0)
+            {
+                *destroyer_id = e[i].id;
+                return 1;
+            }
+        }
+    }
+
+    return 0;
 }
 
 
@@ -1488,6 +1503,11 @@ int main()
     if (battleship.firing_delay < 0.0) {
 	    printf("firing interval cant be negative.\n");
 	    return 1; }
+    printf("enter T_E for escort types A B C D E: ");
+    for (int i = 0; i < 5; i++)
+    {
+	    scanf("%lf", &escort_TE[i]);
+    }
     
     
   //CREATE ESCORT SHIPS
@@ -1502,12 +1522,6 @@ int main()
         );
 	original_escorts[i] = escorts[i];
     }
-
-
-    /*
-    Save initial battlefield while B
-    is at path point 1.
-    */
 
     save_initial_conditions(
         battleship,
@@ -2493,6 +2507,42 @@ fclose(part2a_file);
 
 printf("\npart 2A completed. \n");
 printf("resutls saved to part2a_results.txt\n");
+
+// PART 2B 
+
+FILE *part2b_file = fopen("part2b_results.txt", "w");
+
+if (part2b_file == NULL)
+{
+    printf("Error creating part2b_results.txt\n");
+    return 1;
+}
+
+part2b_mode = 1;
+
+fprintf(part2b_file,
+        "PART 2B RESULTS\n"
+        "T_E: A=%.2f B=%.2f C=%.2f D=%.2f E=%.2f\n",
+        escort_TE[0], escort_TE[1], escort_TE[2],
+        escort_TE[3], escort_TE[4]);
+
+run_part2a_scenario("PART 2B - PART 1A", battleship, original_escorts, n, path_x, path_y, 1, 0, t, theta_min, 0, part2b_file);
+
+run_part2a_scenario("PART 2B - PART 1B SIM 1", battleship, original_escorts, n, path_x, path_y, k, 0, t, theta_min, 0, part2b_file);
+
+run_part2a_scenario("PART 2B - PART 1B SIM 2", battleship, original_escorts, n, path_x, path_y, k, 1, t, theta_min, 0, part2b_file);
+
+run_part2a_scenario("PART 2B - PART 1C / 1A", battleship, original_escorts, n, path_x, path_y, 1, 0, t, theta_min, 1, part2b_file);
+
+run_part2a_scenario("PART 2B - PART 1C / 1B SIM 1", battleship, original_escorts, n, path_x, path_y, k, 0, t, theta_min, 1, part2b_file);
+
+run_part2a_scenario("PART 2B - PART 1C / 1B SIM 2", battleship, original_escorts, n, path_x, path_y, k, 1, t, theta_min, 1, part2b_file);
+
+fclose(part2b_file);
+part2b_mode = 0;
+
+printf("\nPart 2B completed.\n");
+printf("Results saved to part2b_results.txt\n");
 
 return 0;
 

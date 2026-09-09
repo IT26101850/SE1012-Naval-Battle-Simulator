@@ -4,7 +4,7 @@
 PART 1C - PART 1A
 ========================================
 Iteration: 1
-Battleship Position: (36.00, 24.00)
+Battleship Position: (4.00, 34.00)
 Gun Status: NORMAL
 Cumulative Impact on Battleship: 0.00
 Battleship Damage Percentage: 0.00%
@@ -13,72 +13,72 @@ Battleship Status: ALIVE
 ESCORT SHIP STATUS
 
 Escort ID: 1
-Type: A
-Position: (37.00, 45.00)
-Impact Power: 0.08
+Type: D
+Position: (17.00, 14.00)
+Impact Power: 0.05
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 2
-Type: B
-Position: (13.00, 35.00)
-Impact Power: 0.06
+Type: D
+Position: (23.00, 33.00)
+Impact Power: 0.05
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 3
-Type: C
-Position: (3.00, 4.00)
-Impact Power: 0.07
+Type: B
+Position: (46.00, 8.00)
+Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 4
 Type: D
-Position: (25.00, 35.00)
+Position: (38.00, 15.00)
 Impact Power: 0.05
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 5
-Type: D
-Position: (8.00, 22.00)
-Impact Power: 0.05
+Type: E
+Position: (36.00, 32.00)
+Impact Power: 0.04
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 6
-Type: D
-Position: (18.00, 33.00)
-Impact Power: 0.05
+Type: B
+Position: (39.00, 8.00)
+Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 7
-Type: A
-Position: (1.00, 32.00)
-Impact Power: 0.08
+Type: B
+Position: (28.00, 41.00)
+Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 8
-Type: E
-Position: (23.00, 22.00)
-Impact Power: 0.04
+Type: D
+Position: (12.00, 30.00)
+Impact Power: 0.05
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 9
 Type: B
-Position: (49.00, 49.00)
+Position: (44.00, 38.00)
 Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 10
-Type: D
-Position: (7.00, 39.00)
-Impact Power: 0.05
+Type: B
+Position: (40.00, 25.00)
+Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
@@ -86,7 +86,7 @@ Gun Fired: NO
 PART 1C - PART 1B SIMULATION 1
 ========================================
 Iteration: 1
-Battleship Position: (36.00, 24.00)
+Battleship Position: (4.00, 34.00)
 Gun Status: NORMAL
 Cumulative Impact on Battleship: 0.00
 Battleship Damage Percentage: 0.00%
@@ -95,72 +95,72 @@ Battleship Status: ALIVE
 ESCORT SHIP STATUS
 
 Escort ID: 1
-Type: A
-Position: (37.00, 45.00)
-Impact Power: 0.08
+Type: D
+Position: (17.00, 14.00)
+Impact Power: 0.05
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 2
-Type: B
-Position: (13.00, 35.00)
-Impact Power: 0.06
+Type: D
+Position: (23.00, 33.00)
+Impact Power: 0.05
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 3
-Type: C
-Position: (3.00, 4.00)
-Impact Power: 0.07
+Type: B
+Position: (46.00, 8.00)
+Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 4
 Type: D
-Position: (25.00, 35.00)
+Position: (38.00, 15.00)
 Impact Power: 0.05
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 5
-Type: D
-Position: (8.00, 22.00)
-Impact Power: 0.05
+Type: E
+Position: (36.00, 32.00)
+Impact Power: 0.04
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 6
-Type: D
-Position: (18.00, 33.00)
-Impact Power: 0.05
+Type: B
+Position: (39.00, 8.00)
+Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 7
-Type: A
-Position: (1.00, 32.00)
-Impact Power: 0.08
+Type: B
+Position: (28.00, 41.00)
+Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 8
-Type: E
-Position: (23.00, 22.00)
-Impact Power: 0.04
+Type: D
+Position: (12.00, 30.00)
+Impact Power: 0.05
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 9
 Type: B
-Position: (49.00, 49.00)
+Position: (44.00, 38.00)
 Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 10
-Type: D
-Position: (7.00, 39.00)
-Impact Power: 0.05
+Type: B
+Position: (40.00, 25.00)
+Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
@@ -168,7 +168,7 @@ Gun Fired: NO
 PART 1C - PART 1B SIMULATION 1
 ========================================
 Iteration: 2
-Battleship Position: (26.00, 3.00)
+Battleship Position: (6.00, 35.00)
 Gun Status: NORMAL
 Cumulative Impact on Battleship: 0.00
 Battleship Damage Percentage: 0.00%
@@ -177,72 +177,72 @@ Battleship Status: ALIVE
 ESCORT SHIP STATUS
 
 Escort ID: 1
-Type: A
-Position: (37.00, 45.00)
-Impact Power: 0.08
+Type: D
+Position: (17.00, 14.00)
+Impact Power: 0.05
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 2
-Type: B
-Position: (13.00, 35.00)
-Impact Power: 0.06
+Type: D
+Position: (23.00, 33.00)
+Impact Power: 0.05
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 3
-Type: C
-Position: (3.00, 4.00)
-Impact Power: 0.07
+Type: B
+Position: (46.00, 8.00)
+Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 4
 Type: D
-Position: (25.00, 35.00)
+Position: (38.00, 15.00)
 Impact Power: 0.05
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 5
-Type: D
-Position: (8.00, 22.00)
-Impact Power: 0.05
+Type: E
+Position: (36.00, 32.00)
+Impact Power: 0.04
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 6
-Type: D
-Position: (18.00, 33.00)
-Impact Power: 0.05
+Type: B
+Position: (39.00, 8.00)
+Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 7
-Type: A
-Position: (1.00, 32.00)
-Impact Power: 0.08
+Type: B
+Position: (28.00, 41.00)
+Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 8
-Type: E
-Position: (23.00, 22.00)
-Impact Power: 0.04
+Type: D
+Position: (12.00, 30.00)
+Impact Power: 0.05
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 9
 Type: B
-Position: (49.00, 49.00)
+Position: (44.00, 38.00)
 Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 10
-Type: D
-Position: (7.00, 39.00)
-Impact Power: 0.05
+Type: B
+Position: (40.00, 25.00)
+Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
@@ -250,7 +250,7 @@ Gun Fired: NO
 PART 1C - PART 1B SIMULATION 2
 ========================================
 Iteration: 1
-Battleship Position: (36.00, 24.00)
+Battleship Position: (4.00, 34.00)
 Gun Status: NORMAL
 Cumulative Impact on Battleship: 0.00
 Battleship Damage Percentage: 0.00%
@@ -259,72 +259,72 @@ Battleship Status: ALIVE
 ESCORT SHIP STATUS
 
 Escort ID: 1
-Type: A
-Position: (37.00, 45.00)
-Impact Power: 0.08
+Type: D
+Position: (17.00, 14.00)
+Impact Power: 0.05
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 2
-Type: B
-Position: (13.00, 35.00)
-Impact Power: 0.06
+Type: D
+Position: (23.00, 33.00)
+Impact Power: 0.05
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 3
-Type: C
-Position: (3.00, 4.00)
-Impact Power: 0.07
+Type: B
+Position: (46.00, 8.00)
+Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 4
 Type: D
-Position: (25.00, 35.00)
+Position: (38.00, 15.00)
 Impact Power: 0.05
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 5
-Type: D
-Position: (8.00, 22.00)
-Impact Power: 0.05
+Type: E
+Position: (36.00, 32.00)
+Impact Power: 0.04
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 6
-Type: D
-Position: (18.00, 33.00)
-Impact Power: 0.05
+Type: B
+Position: (39.00, 8.00)
+Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 7
-Type: A
-Position: (1.00, 32.00)
-Impact Power: 0.08
+Type: B
+Position: (28.00, 41.00)
+Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 8
-Type: E
-Position: (23.00, 22.00)
-Impact Power: 0.04
+Type: D
+Position: (12.00, 30.00)
+Impact Power: 0.05
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 9
 Type: B
-Position: (49.00, 49.00)
+Position: (44.00, 38.00)
 Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 10
-Type: D
-Position: (7.00, 39.00)
-Impact Power: 0.05
+Type: B
+Position: (40.00, 25.00)
+Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
@@ -332,7 +332,7 @@ Gun Fired: NO
 PART 1C - PART 1B SIMULATION 2
 ========================================
 Iteration: 2
-Battleship Position: (26.00, 3.00)
+Battleship Position: (6.00, 35.00)
 Gun Status: JAMMED
 Allowed Vertical Angle: 20.00 - 90 degrees
 Cumulative Impact on Battleship: 0.00
@@ -342,71 +342,71 @@ Battleship Status: ALIVE
 ESCORT SHIP STATUS
 
 Escort ID: 1
-Type: A
-Position: (37.00, 45.00)
-Impact Power: 0.08
+Type: D
+Position: (17.00, 14.00)
+Impact Power: 0.05
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 2
-Type: B
-Position: (13.00, 35.00)
-Impact Power: 0.06
+Type: D
+Position: (23.00, 33.00)
+Impact Power: 0.05
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 3
-Type: C
-Position: (3.00, 4.00)
-Impact Power: 0.07
+Type: B
+Position: (46.00, 8.00)
+Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 4
 Type: D
-Position: (25.00, 35.00)
+Position: (38.00, 15.00)
 Impact Power: 0.05
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 5
-Type: D
-Position: (8.00, 22.00)
-Impact Power: 0.05
+Type: E
+Position: (36.00, 32.00)
+Impact Power: 0.04
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 6
-Type: D
-Position: (18.00, 33.00)
-Impact Power: 0.05
+Type: B
+Position: (39.00, 8.00)
+Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 7
-Type: A
-Position: (1.00, 32.00)
-Impact Power: 0.08
+Type: B
+Position: (28.00, 41.00)
+Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 8
-Type: E
-Position: (23.00, 22.00)
-Impact Power: 0.04
+Type: D
+Position: (12.00, 30.00)
+Impact Power: 0.05
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 9
 Type: B
-Position: (49.00, 49.00)
+Position: (44.00, 38.00)
 Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO
 
 Escort ID: 10
-Type: D
-Position: (7.00, 39.00)
-Impact Power: 0.05
+Type: B
+Position: (40.00, 25.00)
+Impact Power: 0.06
 Status: DESTROYED
 Gun Fired: NO

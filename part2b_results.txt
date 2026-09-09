@@ -1,7 +1,6 @@
-PART 2A RESULTS
-T_B = 5.00 seconds
-Strategy: higher impact power first, nearest escort used as tie breaker.
-PART 2A - PART 1A
+PART 2B RESULTS
+T_E: A=4.00 B=5.00 C=6.00 D=7.00 E=8.00
+PART 2B - PART 1A
 
 Iteration 1
 Battleship Position: (4.00, 34.00)
@@ -25,7 +24,7 @@ Scenario Summary
 Total Escorts Attacked: 10
 Battle Time: 46.01 seconds
 Final Battleship Status: SURVIVED
-PART 2A - PART 1B SIMULATION 1
+PART 2B - PART 1B SIM 1
 
 Iteration 1
 Battleship Position: (4.00, 34.00)
@@ -58,7 +57,7 @@ Scenario Summary
 Total Escorts Attacked: 10
 Battle Time: 46.01 seconds
 Final Battleship Status: SURVIVED
-PART 2A - PART 1B SIMULATION 2
+PART 2B - PART 1B SIM 2
 
 Iteration 1
 Battleship Position: (4.00, 34.00)
@@ -92,7 +91,7 @@ Scenario Summary
 Total Escorts Attacked: 10
 Battle Time: 46.01 seconds
 Final Battleship Status: SURVIVED
-PART 2A - PART 1C - PART 1A
+PART 2B - PART 1C / 1A
 
 Iteration 1
 Battleship Position: (4.00, 34.00)
@@ -118,7 +117,7 @@ Scenario Summary
 Total Escorts Attacked: 10
 Battle Time: 46.01 seconds
 Final Battleship Status: SURVIVED
-PART 2A - PART 1C - PART 1B SIMULATION 1
+PART 2B - PART 1C / 1B SIM 1
 
 Iteration 1
 Battleship Position: (4.00, 34.00)
@@ -155,7 +154,7 @@ Scenario Summary
 Total Escorts Attacked: 10
 Battle Time: 46.01 seconds
 Final Battleship Status: SURVIVED
-PART 2A - PART 1C - PART 1B SIMULATION 2
+PART 2B - PART 1C / 1B SIM 2
 
 Iteration 1
 Battleship Position: (4.00, 34.00)
