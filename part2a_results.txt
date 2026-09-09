@@ -1,0 +1,195 @@
+PART 2A RESULTS
+T_B = 5.00 seconds
+Strategy: higher impact power first, nearest escort used as tie breaker.
+PART 2A - PART 1A
+
+Iteration 1
+Battleship Position: (36.00, 24.00)
+Gun Status: NORMAL
+
+ATTACK ORDER - ITERATION 1
+1. Escort ID 1 | Type A | Impact Power 0.08 | Fire Time 0.00 | Hit Time 0.66
+2. Escort ID 7 | Type A | Impact Power 0.08 | Fire Time 5.00 | Hit Time 6.13
+3. Escort ID 3 | Type C | Impact Power 0.07 | Fire Time 10.00 | Hit Time 11.21
+4. Escort ID 2 | Type B | Impact Power 0.06 | Fire Time 15.00 | Hit Time 15.80
+5. Escort ID 9 | Type B | Impact Power 0.06 | Fire Time 20.00 | Hit Time 20.89
+6. Escort ID 4 | Type D | Impact Power 0.05 | Fire Time 25.00 | Hit Time 25.49
+7. Escort ID 6 | Type D | Impact Power 0.05 | Fire Time 30.00 | Hit Time 30.63
+8. Escort ID 5 | Type D | Impact Power 0.05 | Fire Time 35.00 | Hit Time 35.88
+9. Escort ID 10 | Type D | Impact Power 0.05 | Fire Time 40.00 | Hit Time 41.03
+10. Escort ID 8 | Type E | Impact Power 0.04 | Fire Time 45.00 | Hit Time 45.41
+Escorts attacked this iteration: 10
+Battleship Status: ALIVE
+
+Scenario Summary
+Total Escorts Attacked: 10
+Battle Time: 45.41 seconds
+Final Battleship Status: SURVIVED
+PART 2A - PART 1B SIMULATION 1
+
+Iteration 1
+Battleship Position: (36.00, 24.00)
+Gun Status: NORMAL
+
+ATTACK ORDER - ITERATION 1
+1. Escort ID 1 | Type A | Impact Power 0.08 | Fire Time 0.00 | Hit Time 0.66
+2. Escort ID 7 | Type A | Impact Power 0.08 | Fire Time 5.00 | Hit Time 6.13
+3. Escort ID 3 | Type C | Impact Power 0.07 | Fire Time 10.00 | Hit Time 11.21
+4. Escort ID 2 | Type B | Impact Power 0.06 | Fire Time 15.00 | Hit Time 15.80
+5. Escort ID 9 | Type B | Impact Power 0.06 | Fire Time 20.00 | Hit Time 20.89
+6. Escort ID 4 | Type D | Impact Power 0.05 | Fire Time 25.00 | Hit Time 25.49
+7. Escort ID 6 | Type D | Impact Power 0.05 | Fire Time 30.00 | Hit Time 30.63
+8. Escort ID 5 | Type D | Impact Power 0.05 | Fire Time 35.00 | Hit Time 35.88
+9. Escort ID 10 | Type D | Impact Power 0.05 | Fire Time 40.00 | Hit Time 41.03
+10. Escort ID 8 | Type E | Impact Power 0.04 | Fire Time 45.00 | Hit Time 45.41
+Escorts attacked this iteration: 10
+Battleship Status: ALIVE
+
+Iteration 2
+Battleship Position: (26.00, 3.00)
+Gun Status: NORMAL
+
+ATTACK ORDER - ITERATION 2
+No escort ships inside Battleship attack range.
+Escorts attacked this iteration: 0
+Battleship Status: ALIVE
+
+Scenario Summary
+Total Escorts Attacked: 10
+Battle Time: 45.41 seconds
+Final Battleship Status: SURVIVED
+PART 2A - PART 1B SIMULATION 2
+
+Iteration 1
+Battleship Position: (36.00, 24.00)
+Gun Status: NORMAL
+
+ATTACK ORDER - ITERATION 1
+1. Escort ID 1 | Type A | Impact Power 0.08 | Fire Time 0.00 | Hit Time 0.66
+2. Escort ID 7 | Type A | Impact Power 0.08 | Fire Time 5.00 | Hit Time 6.13
+3. Escort ID 3 | Type C | Impact Power 0.07 | Fire Time 10.00 | Hit Time 11.21
+4. Escort ID 2 | Type B | Impact Power 0.06 | Fire Time 15.00 | Hit Time 15.80
+5. Escort ID 9 | Type B | Impact Power 0.06 | Fire Time 20.00 | Hit Time 20.89
+6. Escort ID 4 | Type D | Impact Power 0.05 | Fire Time 25.00 | Hit Time 25.49
+7. Escort ID 6 | Type D | Impact Power 0.05 | Fire Time 30.00 | Hit Time 30.63
+8. Escort ID 5 | Type D | Impact Power 0.05 | Fire Time 35.00 | Hit Time 35.88
+9. Escort ID 10 | Type D | Impact Power 0.05 | Fire Time 40.00 | Hit Time 41.03
+10. Escort ID 8 | Type E | Impact Power 0.04 | Fire Time 45.00 | Hit Time 45.41
+Escorts attacked this iteration: 10
+Battleship Status: ALIVE
+
+Iteration 2
+Battleship Position: (26.00, 3.00)
+Gun Status: JAMMED
+Allowed Vertical Angle: 20.00 - 90 degrees
+
+ATTACK ORDER - ITERATION 2
+No escort ships inside Battleship attack range.
+Escorts attacked this iteration: 0
+Battleship Status: ALIVE
+
+Scenario Summary
+Total Escorts Attacked: 10
+Battle Time: 45.41 seconds
+Final Battleship Status: SURVIVED
+PART 2A - PART 1C - PART 1A
+
+Iteration 1
+Battleship Position: (36.00, 24.00)
+Gun Status: NORMAL
+
+ATTACK ORDER - ITERATION 1
+1. Escort ID 1 | Type A | Impact Power 0.08 | Fire Time 0.00 | Hit Time 0.66
+2. Escort ID 7 | Type A | Impact Power 0.08 | Fire Time 5.00 | Hit Time 6.13
+3. Escort ID 3 | Type C | Impact Power 0.07 | Fire Time 10.00 | Hit Time 11.21
+4. Escort ID 2 | Type B | Impact Power 0.06 | Fire Time 15.00 | Hit Time 15.80
+5. Escort ID 9 | Type B | Impact Power 0.06 | Fire Time 20.00 | Hit Time 20.89
+6. Escort ID 4 | Type D | Impact Power 0.05 | Fire Time 25.00 | Hit Time 25.49
+7. Escort ID 6 | Type D | Impact Power 0.05 | Fire Time 30.00 | Hit Time 30.63
+8. Escort ID 5 | Type D | Impact Power 0.05 | Fire Time 35.00 | Hit Time 35.88
+9. Escort ID 10 | Type D | Impact Power 0.05 | Fire Time 40.00 | Hit Time 41.03
+10. Escort ID 8 | Type E | Impact Power 0.04 | Fire Time 45.00 | Hit Time 45.41
+Escorts attacked this iteration: 10
+Cumulative Impact: 0.00
+Damage Percentage: 0.00%
+Battleship Status: ALIVE
+
+Scenario Summary
+Total Escorts Attacked: 10
+Battle Time: 45.41 seconds
+Final Battleship Status: SURVIVED
+PART 2A - PART 1C - PART 1B SIMULATION 1
+
+Iteration 1
+Battleship Position: (36.00, 24.00)
+Gun Status: NORMAL
+
+ATTACK ORDER - ITERATION 1
+1. Escort ID 1 | Type A | Impact Power 0.08 | Fire Time 0.00 | Hit Time 0.66
+2. Escort ID 7 | Type A | Impact Power 0.08 | Fire Time 5.00 | Hit Time 6.13
+3. Escort ID 3 | Type C | Impact Power 0.07 | Fire Time 10.00 | Hit Time 11.21
+4. Escort ID 2 | Type B | Impact Power 0.06 | Fire Time 15.00 | Hit Time 15.80
+5. Escort ID 9 | Type B | Impact Power 0.06 | Fire Time 20.00 | Hit Time 20.89
+6. Escort ID 4 | Type D | Impact Power 0.05 | Fire Time 25.00 | Hit Time 25.49
+7. Escort ID 6 | Type D | Impact Power 0.05 | Fire Time 30.00 | Hit Time 30.63
+8. Escort ID 5 | Type D | Impact Power 0.05 | Fire Time 35.00 | Hit Time 35.88
+9. Escort ID 10 | Type D | Impact Power 0.05 | Fire Time 40.00 | Hit Time 41.03
+10. Escort ID 8 | Type E | Impact Power 0.04 | Fire Time 45.00 | Hit Time 45.41
+Escorts attacked this iteration: 10
+Cumulative Impact: 0.00
+Damage Percentage: 0.00%
+Battleship Status: ALIVE
+
+Iteration 2
+Battleship Position: (26.00, 3.00)
+Gun Status: NORMAL
+
+ATTACK ORDER - ITERATION 2
+No escort ships inside Battleship attack range.
+Escorts attacked this iteration: 0
+Cumulative Impact: 0.00
+Damage Percentage: 0.00%
+Battleship Status: ALIVE
+
+Scenario Summary
+Total Escorts Attacked: 10
+Battle Time: 45.41 seconds
+Final Battleship Status: SURVIVED
+PART 2A - PART 1C - PART 1B SIMULATION 2
+
+Iteration 1
+Battleship Position: (36.00, 24.00)
+Gun Status: NORMAL
+
+ATTACK ORDER - ITERATION 1
+1. Escort ID 1 | Type A | Impact Power 0.08 | Fire Time 0.00 | Hit Time 0.66
+2. Escort ID 7 | Type A | Impact Power 0.08 | Fire Time 5.00 | Hit Time 6.13
+3. Escort ID 3 | Type C | Impact Power 0.07 | Fire Time 10.00 | Hit Time 11.21
+4. Escort ID 2 | Type B | Impact Power 0.06 | Fire Time 15.00 | Hit Time 15.80
+5. Escort ID 9 | Type B | Impact Power 0.06 | Fire Time 20.00 | Hit Time 20.89
+6. Escort ID 4 | Type D | Impact Power 0.05 | Fire Time 25.00 | Hit Time 25.49
+7. Escort ID 6 | Type D | Impact Power 0.05 | Fire Time 30.00 | Hit Time 30.63
+8. Escort ID 5 | Type D | Impact Power 0.05 | Fire Time 35.00 | Hit Time 35.88
+9. Escort ID 10 | Type D | Impact Power 0.05 | Fire Time 40.00 | Hit Time 41.03
+10. Escort ID 8 | Type E | Impact Power 0.04 | Fire Time 45.00 | Hit Time 45.41
+Escorts attacked this iteration: 10
+Cumulative Impact: 0.00
+Damage Percentage: 0.00%
+Battleship Status: ALIVE
+
+Iteration 2
+Battleship Position: (26.00, 3.00)
+Gun Status: JAMMED
+Allowed Vertical Angle: 20.00 - 90 degrees
+
+ATTACK ORDER - ITERATION 2
+No escort ships inside Battleship attack range.
+Escorts attacked this iteration: 0
+Cumulative Impact: 0.00
+Damage Percentage: 0.00%
+Battleship Status: ALIVE
+
+Scenario Summary
+Total Escorts Attacked: 10
+Battle Time: 45.41 seconds
+Final Battleship Status: SURVIVED
