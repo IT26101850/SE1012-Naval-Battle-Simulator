@@ -1153,8 +1153,8 @@ void run_part2a_scenario(
 
 
         printf(
-            "\nIteration %d\n",
-            p + 1
+		       	"\nIteration %d\n",
+		       	p + 1
         );
 
         printf(
@@ -1334,9 +1334,8 @@ void run_part2a_scenario(
     fprintf(file,"Battle Time: %.2f seconds\n",battle_time);
     if (b_destroyed == 1)
     {
-        fprintf(file,"Final Battleship Status: DESTROYED\n");
-
-        fprintf(file,"Final damaging Escort ID: %d\n", destroyer_id);
+	    fprintf(file,"Final Battleship Status: DESTROYED\n");
+	    fprintf(file,"Final damaging Escort ID: %d\n", destroyer_id);
     }
     else
     {
@@ -1592,12 +1591,11 @@ if (choice == 1 || choice == 6)
 
         if (distance <= max_range)
         {
-            part1a_escorts[i].is_destroyed = 1;
-            part1a_hit_count++;
-
-            printf(
-                "Battleship destroyed Escort Ship %d\n",
-                part1a_escorts[i].id
+	       	part1a_escorts[i].is_destroyed = 1;
+	       	part1a_hit_count++;
+	       	printf(
+			       	"Battleship destroyed Escort Ship %d\n",
+			       	part1a_escorts[i].id
             );
         }
     }
@@ -2443,11 +2441,10 @@ for (int p = 0;
 
         if (distance <= max_range)
         {
-            c_escorts[i].is_destroyed = 1;
-
-            printf(
-                "Battleship destroyed Escort Ship %d\n",
-                c_escorts[i].id
+	       	c_escorts[i].is_destroyed = 1;
+	       	printf(
+				"Battleship destroyed Escort Ship %d\n",
+			       	c_escorts[i].id
             );
         }
     }
@@ -2515,16 +2512,13 @@ for (int p = 0;
     {
         gun_jammed = 1;
     }
-
-
     printf( "\nPart 1C Simulation 2 - Iteration %d\n", p + 1);
 
 
     if (gun_jammed == 1)
     {
-        printf( "Gun Status: JAMMED\n");
-
-        printf( "Allowed Vertical Angle: %.2f - 90 degrees\n", theta_min );
+	    printf( "Gun Status: JAMMED\n");
+	    printf( "Allowed Vertical Angle: %.2f - 90 degrees\n", theta_min );
     }
     else
     {
@@ -2536,8 +2530,8 @@ for (int p = 0;
 
     for (int i = 0; i < n; i++)
     {
-        double distance;
-        double max_range;
+	    double distance;
+	    double max_range;
 
 
         if (c_escorts[i].is_destroyed == 1)
