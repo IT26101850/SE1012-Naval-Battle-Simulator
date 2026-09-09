@@ -1400,6 +1400,9 @@ int main()
     char type;
 
     int k;
+    int choice;
+    int t;
+    double theta_min;
     double path_x[100];
     double path_y[100];
 
@@ -1529,6 +1532,131 @@ int main()
         n,
         canvas_D
     );
+    printf("\n NAVAL BATTLE SIMULATOR \n");
+    printf("1. part1A\n");
+    printf("2. part1B\n");
+    printf("3. part1C\n");
+    printf("4. part2A\n");
+    printf("5. part2B\n");
+    printf("6. run all\n");
+    printf("0. exit\n");
+    printf("enter choice: ");
+
+    scanf("%d", &choice);
+
+    switch (choice)
+{
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+        break;
+
+    case 0:
+        printf("exiting simulator.\n");
+        return 0;
+
+    default:
+        printf("invalid choice.\n");
+        return 1;
+}
+if (choice == 1 || choice == 6)
+	{
+    EscortShip part1a_escorts[100];
+    int part1a_b_destroyed = 0;
+    int part1a_destroyer_id = -1;
+    int part1a_hit_count = 0;
+
+    printf("\n===== PART 1A =====\n");
+
+    for (int i = 0; i < n; i++)
+    {
+        part1a_escorts[i] = original_escorts[i];
+    }
+
+    battleship.x = path_x[0];
+    battleship.y = path_y[0];
+
+    for (int i = 0; i < n; i++)
+    {
+        double distance = get_distance(
+            battleship.x,
+            battleship.y,
+            part1a_escorts[i].x,
+            part1a_escorts[i].y
+        );
+
+        double max_range = get_max_range(battleship.max_v);
+
+        if (distance <= max_range)
+        {
+            part1a_escorts[i].is_destroyed = 1;
+            part1a_hit_count++;
+
+            printf(
+                "Battleship destroyed Escort Ship %d\n",
+                part1a_escorts[i].id
+            );
+        }
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        if (part1a_escorts[i].is_destroyed == 1)
+            continue;
+
+        double min_range = get_min_range_escort(
+            part1a_escorts[i].min_v,
+            part1a_escorts[i].min_angle
+        );
+
+        double max_range = get_max_range(
+            part1a_escorts[i].max_v
+        );
+
+        if (is_in_range(
+            part1a_escorts[i].x,
+            part1a_escorts[i].y,
+            min_range,
+            max_range,
+            battleship.x,
+            battleship.y))
+        {
+            part1a_b_destroyed = 1;
+            part1a_destroyer_id = part1a_escorts[i].id;
+
+            printf(
+                "Escort Ship %d destroyed Battleship\n",
+                part1a_destroyer_id
+            );
+
+            break;
+        }
+    }
+
+    printf("\nPART 1A RESULT\n");
+
+    if (part1a_b_destroyed == 1)
+    {
+        printf(
+            "Battleship DESTROYED by Escort Ship %d\n",
+            part1a_destroyer_id
+        );
+    }
+    else
+    {
+        printf("Battleship SURVIVED\n");
+        printf(
+            "Escort Ships Destroyed: %d\n",
+            part1a_hit_count
+        );
+    }
+}
+
+       if (choice == 2 || choice == 6)
+    {
 
 
     printf(
@@ -2113,6 +2241,13 @@ int main()
         destroyer_id
     );
 
+    }
+
+    if (choice == 3 || choice == 6)
+    {
+    
+
+
      // PART 1C
 FILE *part1c_file;
 
@@ -2471,7 +2606,11 @@ printf(
 printf(
     "Results saved to part1c_results.txt\n"
 );
-// PART 2A 
+
+}
+
+if (choice == 4 || choice == 6)
+{
 
 FILE *part2a_file =
     fopen("part2a_results.txt", "w");
@@ -2507,8 +2646,11 @@ fclose(part2a_file);
 
 printf("\npart 2A completed. \n");
 printf("resutls saved to part2a_results.txt\n");
+}
 
-// PART 2B 
+// PART 2B
+if (choice == 5 || choice == 6)
+{	
 
 FILE *part2b_file = fopen("part2b_results.txt", "w");
 
@@ -2543,6 +2685,7 @@ part2b_mode = 0;
 
 printf("\nPart 2B completed.\n");
 printf("Results saved to part2b_results.txt\n");
+}
 
 return 0;
 
