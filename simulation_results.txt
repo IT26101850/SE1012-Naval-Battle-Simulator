@@ -3,16 +3,16 @@ SIMULATION RESULTS
 Battleship: MS king George V
 Result: BATTLESHIP SURVIVED
 Escort ships destroyed: 10
-Battle time: 1.10 seconds
+Battle time: 1.27 seconds
 
 DESTROYED ESCORT SHIPS
-Escort ID: 1   Time: 0.94 seconds
-Escort ID: 2   Time: 0.82 seconds
-Escort ID: 3   Time: 0.45 seconds
-Escort ID: 4   Time: 0.76 seconds
-Escort ID: 5   Time: 0.29 seconds
-Escort ID: 6   Time: 1.10 seconds
-Escort ID: 7   Time: 0.89 seconds
-Escort ID: 8   Time: 0.93 seconds
-Escort ID: 9   Time: 0.49 seconds
-Escort ID: 10   Time: 1.01 seconds
+Escort ID: 1   Time: 0.60 seconds
+Escort ID: 2   Time: 0.94 seconds
+Escort ID: 3   Time: 0.88 seconds
+Escort ID: 4   Time: 1.27 seconds
+Escort ID: 5   Time: 0.72 seconds
+Escort ID: 6   Time: 0.79 seconds
+Escort ID: 7   Time: 1.13 seconds
+Escort ID: 8   Time: 0.66 seconds
+Escort ID: 9   Time: 0.53 seconds
+Escort ID: 10   Time: 0.66 seconds

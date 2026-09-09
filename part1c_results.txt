@@ -1,0 +1,412 @@
+ PART 1C RESULTS
+
+========================================
+PART 1C - PART 1A
+========================================
+Iteration: 1
+Battleship Position: (13.00, 2.00)
+Gun Status: NORMAL
+Cumulative Impact on Battleship: 0.00
+Battleship Damage Percentage: 0.00%
+Battleship Status: ALIVE
+
+ESCORT SHIP STATUS
+
+Escort ID: 1
+Type: C
+Position: (7.00, 20.00)
+Impact Power: 0.07
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 2
+Type: D
+Position: (43.00, 4.00)
+Impact Power: 0.05
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 3
+Type: B
+Position: (5.00, 29.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 4
+Type: D
+Position: (43.00, 29.00)
+Impact Power: 0.05
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 5
+Type: B
+Position: (36.00, 2.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 6
+Type: C
+Position: (16.00, 27.00)
+Impact Power: 0.07
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 7
+Type: B
+Position: (38.00, 28.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 8
+Type: B
+Position: (34.00, 0.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 9
+Type: C
+Position: (8.00, 18.00)
+Impact Power: 0.07
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 10
+Type: B
+Position: (34.00, 4.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+========================================
+PART 1C - PART 1B SIMULATION 1
+========================================
+Iteration: 1
+Battleship Position: (13.00, 2.00)
+Gun Status: NORMAL
+Cumulative Impact on Battleship: 0.00
+Battleship Damage Percentage: 0.00%
+Battleship Status: ALIVE
+
+ESCORT SHIP STATUS
+
+Escort ID: 1
+Type: C
+Position: (7.00, 20.00)
+Impact Power: 0.07
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 2
+Type: D
+Position: (43.00, 4.00)
+Impact Power: 0.05
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 3
+Type: B
+Position: (5.00, 29.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 4
+Type: D
+Position: (43.00, 29.00)
+Impact Power: 0.05
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 5
+Type: B
+Position: (36.00, 2.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 6
+Type: C
+Position: (16.00, 27.00)
+Impact Power: 0.07
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 7
+Type: B
+Position: (38.00, 28.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 8
+Type: B
+Position: (34.00, 0.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 9
+Type: C
+Position: (8.00, 18.00)
+Impact Power: 0.07
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 10
+Type: B
+Position: (34.00, 4.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+========================================
+PART 1C - PART 1B SIMULATION 1
+========================================
+Iteration: 2
+Battleship Position: (49.00, 4.00)
+Gun Status: NORMAL
+Cumulative Impact on Battleship: 0.00
+Battleship Damage Percentage: 0.00%
+Battleship Status: ALIVE
+
+ESCORT SHIP STATUS
+
+Escort ID: 1
+Type: C
+Position: (7.00, 20.00)
+Impact Power: 0.07
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 2
+Type: D
+Position: (43.00, 4.00)
+Impact Power: 0.05
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 3
+Type: B
+Position: (5.00, 29.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 4
+Type: D
+Position: (43.00, 29.00)
+Impact Power: 0.05
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 5
+Type: B
+Position: (36.00, 2.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 6
+Type: C
+Position: (16.00, 27.00)
+Impact Power: 0.07
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 7
+Type: B
+Position: (38.00, 28.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 8
+Type: B
+Position: (34.00, 0.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 9
+Type: C
+Position: (8.00, 18.00)
+Impact Power: 0.07
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 10
+Type: B
+Position: (34.00, 4.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+========================================
+PART 1C - PART 1B SIMULATION 2
+========================================
+Iteration: 1
+Battleship Position: (13.00, 2.00)
+Gun Status: NORMAL
+Cumulative Impact on Battleship: 0.00
+Battleship Damage Percentage: 0.00%
+Battleship Status: ALIVE
+
+ESCORT SHIP STATUS
+
+Escort ID: 1
+Type: C
+Position: (7.00, 20.00)
+Impact Power: 0.07
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 2
+Type: D
+Position: (43.00, 4.00)
+Impact Power: 0.05
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 3
+Type: B
+Position: (5.00, 29.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 4
+Type: D
+Position: (43.00, 29.00)
+Impact Power: 0.05
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 5
+Type: B
+Position: (36.00, 2.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 6
+Type: C
+Position: (16.00, 27.00)
+Impact Power: 0.07
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 7
+Type: B
+Position: (38.00, 28.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 8
+Type: B
+Position: (34.00, 0.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 9
+Type: C
+Position: (8.00, 18.00)
+Impact Power: 0.07
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 10
+Type: B
+Position: (34.00, 4.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+========================================
+PART 1C - PART 1B SIMULATION 2
+========================================
+Iteration: 2
+Battleship Position: (49.00, 4.00)
+Gun Status: JAMMED
+Allowed Vertical Angle: 20.00 - 90 degrees
+Cumulative Impact on Battleship: 0.00
+Battleship Damage Percentage: 0.00%
+Battleship Status: ALIVE
+
+ESCORT SHIP STATUS
+
+Escort ID: 1
+Type: C
+Position: (7.00, 20.00)
+Impact Power: 0.07
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 2
+Type: D
+Position: (43.00, 4.00)
+Impact Power: 0.05
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 3
+Type: B
+Position: (5.00, 29.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 4
+Type: D
+Position: (43.00, 29.00)
+Impact Power: 0.05
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 5
+Type: B
+Position: (36.00, 2.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 6
+Type: C
+Position: (16.00, 27.00)
+Impact Power: 0.07
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 7
+Type: B
+Position: (38.00, 28.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 8
+Type: B
+Position: (34.00, 0.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 9
+Type: C
+Position: (8.00, 18.00)
+Impact Power: 0.07
+Status: DESTROYED
+Gun Fired: NO
+
+Escort ID: 10
+Type: B
+Position: (34.00, 4.00)
+Impact Power: 0.06
+Status: DESTROYED
+Gun Fired: NO
